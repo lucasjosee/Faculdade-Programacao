@@ -1,0 +1,38 @@
+{
+	"nodes":[
+		{"id":"4bf7197435a6cfae","type":"file","file":"Faculdade/Aeds 2/Unidade 1/Nivelamento/Matemática Básica.md","x":-1120,"y":-2120,"width":400,"height":400},
+		{"id":"e12d7f459f5cd371","type":"file","file":"Faculdade/Aeds 2/Unidade 1/Nivelamento/Ordenação em Memória Principal.md","x":-2000,"y":-1720,"width":400,"height":400},
+		{"id":"8ec9a9e58ab20398","type":"file","file":"Faculdade/Aeds 2/Unidade 1/Nivelamento/Pesquisa em Memória Primária.md","x":-240,"y":-1720,"width":400,"height":400},
+		{"id":"5bf2ceb7d2f6dd16","type":"file","file":"Faculdade/Aeds 2/Unidade 1/Nivelamento/Conceitos Basicos.md","x":-1120,"y":-1320,"width":400,"height":400},
+		{"id":"da24f4823d9e47d4","type":"file","file":"Faculdade/Aeds 2/Unidade 1/Noções de Complexidade/Funções de Complexidade/Funções de Complexidade.md","x":-1919,"y":640,"width":400,"height":400},
+		{"id":"2f72219b1c3610b9","type":"text","text":"A Tabela apresenta a função de complexidade para o número de subtrações dos Algoritmos A, B e C mencionados na Tabela 1. Os Algoritmos A e B possuem uma função de complexidade constante, pois o número de subtrações que eles executam não é afetado pelo tamanho da entrada. O Algoritmo C tem uma função de complexidade linear na qual o crescimento do seu número de subtrações é proporcional ao tamanho da entrada. A Tabela 2 também mostra que o Algoritmo B possui um melhor caso diferente do seu pior caso; entretanto, os Algoritmos A e C não possuem diferença de caso porque eles sempre realizam um número constante de subtrações.","x":-2919,"y":795,"width":609,"height":245},
+		{"id":"5fc2a4ff4a2e9347","type":"file","file":"Faculdade/Aeds 2/Unidade 1/Noções de Complexidade/Noção Sobre a Notação Θ/Noção Sobre a Notação Θ.md","x":-1119,"y":880,"width":400,"height":400},
+		{"id":"33b00be505cb087d","type":"text","text":"exemplos de ordens de complexidade utilizando a notação Θ","x":-1439,"y":1334,"width":280,"height":108},
+		{"id":"28c1ed0352ec1638","type":"file","file":"Faculdade/Aeds 2/Unidade 1/Noções de Complexidade/Funções de Complexidade/Funções de Algoritmos.png","x":-3060,"y":1200,"width":892,"height":242},
+		{"id":"bf2289a492419c82","type":"file","file":"Faculdade/Aeds 2/Unidade 1/Noções de Complexidade/Noção Sobre a Notação Θ/Exemplos Notação Θ.png","x":-1119,"y":1480,"width":400,"height":314},
+		{"id":"20d194c769fcd79b","type":"file","file":"Faculdade/Aeds 2/Unidade 1/Noções de Complexidade/Contagens/Contagem de Operações.md","x":-320,"y":640,"width":400,"height":400},
+		{"id":"d75c45f26b28938a","type":"file","file":"Faculdade/Aeds 2/Unidade 1/Noções de Complexidade/Contagens/Repetição.md","x":320,"y":240,"width":400,"height":400},
+		{"id":"292358cc6fe8bd58","type":"file","file":"Faculdade/Aeds 2/Unidade 1/Noções de Complexidade/Contagens/Sequencial e Condicional.md","x":320,"y":1080,"width":400,"height":400},
+		{"id":"122ef16c3bec4a0f","type":"file","file":"Faculdade/Aeds 2/Unidade 1/Noções de Complexidade/Contagens/Laço com Custo Logarítmico.md","x":960,"y":680,"width":400,"height":400},
+		{"id":"e2f9ff1de576327f","type":"file","file":"Faculdade/Aeds 2/Unidade 1/Noções de Complexidade/Noções de Complexidade.md","x":-1119,"y":240,"width":400,"height":400},
+		{"id":"c7afb116d67aac90","type":"text","text":"# Unidade 1","x":-1012,"y":-400,"width":185,"height":50},
+		{"id":"51f35cb321827e82","type":"file","file":"Faculdade/Aeds 2/Unidade 1/Somatórios/Somatórios.md","x":-2000,"y":-550,"width":400,"height":400}
+	],
+	"edges":[
+		{"id":"031f08a2772a81e9","fromNode":"e2f9ff1de576327f","fromSide":"right","toNode":"20d194c769fcd79b","toSide":"left"},
+		{"id":"e428ed53b88c2fd5","fromNode":"20d194c769fcd79b","fromSide":"right","toNode":"d75c45f26b28938a","toSide":"bottom"},
+		{"id":"cdcffee1d31158b6","fromNode":"20d194c769fcd79b","fromSide":"right","toNode":"122ef16c3bec4a0f","toSide":"left"},
+		{"id":"c91be77685490415","fromNode":"20d194c769fcd79b","fromSide":"right","toNode":"292358cc6fe8bd58","toSide":"top"},
+		{"id":"1787d4eb3356d80a","fromNode":"e2f9ff1de576327f","fromSide":"left","toNode":"da24f4823d9e47d4","toSide":"right"},
+		{"id":"3396f06566438b88","fromNode":"da24f4823d9e47d4","fromSide":"left","toNode":"2f72219b1c3610b9","toSide":"right"},
+		{"id":"13b709e1d0006e7d","fromNode":"2f72219b1c3610b9","fromSide":"bottom","toNode":"28c1ed0352ec1638","toSide":"top"},
+		{"id":"3ab771e4b50302d1","fromNode":"5bf2ceb7d2f6dd16","fromSide":"top","toNode":"4bf7197435a6cfae","toSide":"bottom"},
+		{"id":"dc34a6da39770bfe","fromNode":"5bf2ceb7d2f6dd16","fromSide":"top","toNode":"e12d7f459f5cd371","toSide":"right"},
+		{"id":"797942a8d47518db","fromNode":"5bf2ceb7d2f6dd16","fromSide":"top","toNode":"8ec9a9e58ab20398","toSide":"left"},
+		{"id":"c9b67e57b81d7537","fromNode":"e2f9ff1de576327f","fromSide":"bottom","toNode":"5fc2a4ff4a2e9347","toSide":"top"},
+		{"id":"117324fcfbdf78d6","fromNode":"33b00be505cb087d","fromSide":"bottom","toNode":"bf2289a492419c82","toSide":"left"},
+		{"id":"6d24f88555fe7666","fromNode":"5fc2a4ff4a2e9347","fromSide":"bottom","toNode":"bf2289a492419c82","toSide":"top"},
+		{"id":"844f429f83de209f","fromNode":"c7afb116d67aac90","fromSide":"bottom","toNode":"e2f9ff1de576327f","toSide":"top"},
+		{"id":"7c2433ddcbe18d6c","fromNode":"c7afb116d67aac90","fromSide":"top","toNode":"5bf2ceb7d2f6dd16","toSide":"bottom"}
+	]
+}

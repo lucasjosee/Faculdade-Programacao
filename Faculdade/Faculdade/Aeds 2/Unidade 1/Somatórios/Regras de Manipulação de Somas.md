@@ -1,0 +1,3 @@
+Ao aplicar técnicas adequadas, é possível simplificar expressões somatórias e obter resultados mais facilmente interpretáveis. Duas formas de resolver somatórios são aplicando as três regras básicas de transformação ou as duas propriedades de transformação. As três regras básicas são distributividade, associatividade e comutatividade. A distributividade permite distribuir um fator comum a todos os termos da soma, facilitando a simplificação. A associatividade permite agrupar os termos de diferentes maneiras, mudando a ordem de avaliação. A comutatividade permite permutar a ordem dos termos sem afetar o resultado final da soma.
+
+[[Regras Básicas de Transformação]]

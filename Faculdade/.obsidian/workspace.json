@@ -1,0 +1,217 @@
+{
+  "main": {
+    "id": "a1c82af98e6b05f8",
+    "type": "split",
+    "children": [
+      {
+        "id": "8dde7da3958dd63b",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "96c8ea9abbdc6466",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "Faculdade/Engenharia de Software/imagens/Pasted image 20250921173652.png"
+              },
+              "icon": "lucide-image",
+              "title": "Pasted image 20250921173652"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "f2f6ec84cf8d93a8",
+    "type": "split",
+    "children": [
+      {
+        "id": "71b3ce7ccf31234f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "110b4a43aaa71e85",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "byCreatedTimeReverse",
+                "autoReveal": true
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Explorador de arquivos"
+            }
+          },
+          {
+            "id": "91e0d096443cf723",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Procurar"
+            }
+          },
+          {
+            "id": "a6c80e8fa0373520",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Marcadores"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "a6de182246b1278f",
+    "type": "split",
+    "children": [
+      {
+        "id": "7e49d5d79a376866",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "253015fbd06ee5ee",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks"
+            }
+          },
+          {
+            "id": "bcf4ff88ed4d813a",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links"
+            }
+          },
+          {
+            "id": "ed09064f3c43c58a",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "502c1747476353ed",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Abrir a troca rápida": false,
+      "graph:Abrir visualização em gráfico": false,
+      "canvas:Criar novo canvas": false,
+      "daily-notes:Abrir a nota de hoje": false,
+      "templates:Inserir modelo": false,
+      "command-palette:Abrir paleta de comandos": false,
+      "bases:Criar nova base": false
+    }
+  },
+  "active": "110b4a43aaa71e85",
+  "lastOpenFiles": [
+    "Faculdade/Engenharia de Software/Modelos Ageis.md",
+    "Faculdade/Engenharia de Software/imagens/Pasted image 20250921173652.png",
+    "Faculdade/Engenharia de Software/Modelos de Processos.md",
+    "Faculdade/Engenharia de Software/Modelos Tradicionais.md",
+    "Faculdade/Engenharia de Software/Engenharia de Software.md",
+    "Faculdade/Engenharia de Software/imagens/Pasted image 20250921163928.png",
+    "Faculdade/Engenharia de Software/imagens/Pasted image 20250921164935.png",
+    "Faculdade/Engenharia de Software/imagens/Pasted image 20250921170520.png",
+    "Faculdade/Engenharia de Software/imagens",
+    "Faculdade/Faculdade.md",
+    "Faculdade/Aeds 2/Unidade 1/Somatórios/Métodos Gerais para Resolução.md",
+    "Faculdade/Engenharia de Software",
+    "Faculdade/Aeds 2/Main.canvas",
+    "Curso de Java/Java.md",
+    "Curso de Java",
+    "Faculdade/Aeds 2/Unidade 1/Unidade 1.md",
+    "Faculdade",
+    "Faculdade/Aeds 2/Unidade 1/Somatórios/Regras Básicas de Transformação.md",
+    "Faculdade/Aeds 2/Unidade 1/Somatórios/Propriedades do Somatório.md",
+    "Faculdade/Aeds 2/Unidade 1/Somatórios/Imagens/Pasted image 20250908160033.png",
+    "Faculdade/Aeds 2/Unidade 1/Somatórios/Imagens/Screenshot 2025-09-08 144951.png",
+    "Faculdade/Aeds 2/Unidade 1/Somatórios/Imagens/Screenshot 2025-09-08 144956.png",
+    "Faculdade/Aeds 2/Unidade 1/Somatórios/Imagens/Pasted image 20250908145044.png",
+    "Faculdade/Aeds 2/Unidade 1/Somatórios/Imagens/Pasted image 20250908145338.png",
+    "Faculdade/Aeds 2/Unidade 1/Somatórios/Somatórios.md",
+    "Faculdade/Aeds 2/Unidade 1/Somatórios/Regras de Manipulação de Somas.md",
+    "Aeds 2/Unidade 1/Somatórios/Métodos Gerais para Resolução",
+    "Faculdade/Aeds 2/Unidade 1/Noções de Complexidade/Funções de Complexidade/Funções de Complexidade.md",
+    "Faculdade/Aeds 2/Unidade 1/Noções de Complexidade/Noção Sobre a Notação Θ/Noção Sobre a Notação Θ.md",
+    "Faculdade/Aeds 2/Unidade 1/Somatórios/Imagens/Screenshot 2025-09-06 144337.png",
+    "Faculdade/Aeds 2/Unidade 1/Somatórios/Somatorios.canvas",
+    "Faculdade/Aeds 2/Unidade 1/Somatórios/Imagens",
+    "Faculdade/Aeds 2/Unidade 1/Nivelamento/Ordenação em Memória Principal.md",
+    "Faculdade/Aeds 2/Unidade 1/Nivelamento/Pesquisa em Memória Primária.md",
+    "Faculdade/Aeds 2/Unidade 1/Nivelamento/Matemática Básica.md",
+    "Faculdade/Aeds 2/Unidade 1/Somatórios",
+    "Faculdade/Aeds 2/Unidade 1/Noções de Complexidade/Noções de Complexidade.md",
+    "Faculdade/Aeds 2/Unidade 1/Noções de Complexidade/Noção Sobre a Notação Θ",
+    "Faculdade/Aeds 2/Unidade 1/Nivelamento/Conceitos Basicos.md",
+    "Faculdade/Aeds 2/Unidade 1/Noções de Complexidade/Funções de Complexidade",
+    "Faculdade/Aeds 2/Unidade 1/Noções de Complexidade/Contagens",
+    "Faculdade/Aeds 2/Unidade 1/Noções de Complexidade/Contagens/Laço com Custo Logarítmico.md",
+    "Faculdade/Aeds 2/Unidade 1/Noções de Complexidade/Contagens/Repetição.md",
+    "Faculdade/Aeds 2/Unidade 1/Noções de Complexidade/Contagens/Contagem de Operações.md",
+    "Faculdade/Aeds 2/Unidade 1/Noções de Complexidade/Contagens/Sequencial e Condicional.md",
+    "Aeds 2/Nivelamento/Nivelamento.md",
+    "Aeds 2/Nivelamento.md"
+  ]
+}
