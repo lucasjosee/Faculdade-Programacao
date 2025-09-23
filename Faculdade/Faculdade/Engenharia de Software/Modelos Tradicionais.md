@@ -23,6 +23,8 @@ Protótipo com interfaces gráficas que retratam a interação com o usuário. P
 
 Apropriado para quando o cliente definiu um conjunto de objetivos gerais para o software, isto é, não identificou requisitos com detalhes.
 
+É uma ferramenta que é usada para descobrir os requisitos.
+
 ##### Espiral:
 ![[Pasted image 20250921170520.png]]
 Fluxo Evolucionario

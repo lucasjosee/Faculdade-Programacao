@@ -1,0 +1,185 @@
+{
+  "main": {
+    "id": "949ced4d1bfb3389",
+    "type": "split",
+    "children": [
+      {
+        "id": "cb24b3b7bd4aa1b1",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "cf3b3220eb8c5ce6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Faculdade/Faculdade/Engenharia de Software/Modelo de Entidade - Relacionamento.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Modelo de Entidade - Relacionamento"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "efe65bb7ccfaf521",
+    "type": "split",
+    "children": [
+      {
+        "id": "a5964cd219290fda",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "c77ad8bc5c509cb1",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Explorador de arquivos"
+            }
+          },
+          {
+            "id": "47e0189356117e56",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Procurar"
+            }
+          },
+          {
+            "id": "fd42bc6277f060d8",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Marcadores"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "df4ad2b1b160f172",
+    "type": "split",
+    "children": [
+      {
+        "id": "4a9a13e385feb324",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d8dff8d427a0f3b4",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Faculdade/Faculdade/Engenharia de Software/Modelo de Entidade - Relacionamento.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Links inversos para Modelo de Entidade - Relacionamento"
+            }
+          },
+          {
+            "id": "d66f5b85a699da3a",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Faculdade/Faculdade/Engenharia de Software/Modelo de Entidade - Relacionamento.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Links de saída para Modelo de Entidade - Relacionamento"
+            }
+          },
+          {
+            "id": "355c518d2558fef8",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "88db1f80168c28e7",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Faculdade/Faculdade/Engenharia de Software/Modelo de Entidade - Relacionamento.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Sumário de Modelo de Entidade - Relacionamento"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Abrir a troca rápida": false,
+      "graph:Abrir visualização em gráfico": false,
+      "canvas:Criar novo canvas": false,
+      "daily-notes:Abrir a nota de hoje": false,
+      "templates:Inserir modelo": false,
+      "command-palette:Abrir paleta de comandos": false,
+      "bases:Criar nova base": false
+    }
+  },
+  "active": "cf3b3220eb8c5ce6",
+  "lastOpenFiles": [
+    "Faculdade/Codigos/Trabalho Quick Sort/quickSort.java",
+    "Faculdade/Codigos/Trabalho Quick Sort",
+    "Faculdade/Codigos/Nova pasta",
+    "Faculdade/Faculdade/Engenharia de Software/Modelos Tradicionais.md",
+    "Faculdade/Faculdade/Engenharia de Software/Modelos de Processos.md",
+    "Faculdade/Faculdade/Engenharia de Software/Modelo de Entidade - Relacionamento.md",
+    "Faculdade/Faculdade/Engenharia de Software/Modelos Ageis.md",
+    "Faculdade/Faculdade/Engenharia de Software/Engenharia de Software.md",
+    "Curso de Java/Java.md",
+    "README.md"
+  ]
+}
