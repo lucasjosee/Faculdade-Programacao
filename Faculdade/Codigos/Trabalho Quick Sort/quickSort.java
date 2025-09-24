@@ -11,7 +11,6 @@ public class quickSort {
     public static void main(String[] args) {
         
         //TAMANHOS DE ARRAY PARA O TESTE
-        //int[] array = new int[1000];
         int[] array = new int[10000];
         //int[] array = new int[100000];
         //int[] array = new int[1000000];
@@ -22,16 +21,16 @@ public class quickSort {
         }
 
         //Para testar com o array ordenado ou quase ordenado descomente
-        //QuickSortMedianOfThree(array, 0, array.length);
+        QuickSortFirstPivot(array, 0, array.length - 1);
 
         //Descomente somente para testar o array quase ordenado
-        //arrayQuaseOrd(array, array.length / 2);
+        arrayQuaseOrd(array, array.length / 2);
 
         //embaralha os numeros do array para torna-lo completamente desordenado descomente
-        embaralharArray(array);
+        //embaralharArray(array);
 
         //for para testar os sorts N vezes
-        for(int i = 0; i < 5; i++)
+        for(int i = 0; i < 10; i++)
         {
             int[] arrayClone = array.clone();
 

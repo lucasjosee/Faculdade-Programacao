@@ -22,19 +22,6 @@ A grande vantagens delas é que ela são potencias de 2 ($2^3$ = 8, e $2^4$ = 16
 **Para converter de Binário para Hexadecimal:** Agrupe os bits de 4 em 4.
 ![[Pasted image 20250923202816.png]]
 
-### Operações Aritméticas
-As operações em binário seguem regras simples. A mais importante é a
-
-**adição**:
-
-- 0+0=0
-    
-- 0+1=1
-    
-- 1+0=1
-    
-- 1+1=0 e "vai-um" (carry-out) para a próxima coluna, resultando em $10_{2}$.
-    
 
 
 
