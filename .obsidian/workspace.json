@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Faculdade/Faculdade/Arquitetura de Computadores/Álgebra Booleana.md",
+                "file": "Faculdade/Faculdade/Aeds 2/Unidade 3/Algoritmo de Bolha (Bubble Sort).md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Álgebra Booleana"
+              "title": "Algoritmo de Bolha (Bubble Sort)"
             }
           }
         ]
@@ -169,8 +169,21 @@
       "bases:Criar nova base": false
     }
   },
-  "active": "c77ad8bc5c509cb1",
+  "active": "cf3b3220eb8c5ce6",
   "lastOpenFiles": [
+    "Faculdade/Codigos/Sorts/Bubble Sort/BubbleSortEx02.java",
+    "Faculdade/Codigos/Sorts/Bubble Sort/BubbleSortWx.java",
+    "Faculdade/Codigos/Sorts/Bubble Sort/BubbleSortEx01.java",
+    "Faculdade/Codigos/Sorts/Bubble Sort/BubbleSort.java",
+    "Faculdade/Codigos/Sorts/Bubble Sort",
+    "Faculdade/Codigos/Sorts/Nova pasta",
+    "Faculdade/Faculdade/Aeds 2/Unidade 3/Ordenação Interna.md",
+    "Faculdade/Faculdade/Aeds 2/Unidade 3/Algoritmo de Bolha (Bubble Sort).md",
+    "Faculdade/Faculdade/Aeds 2/Unidade 3/Unidade 3.md",
+    "Faculdade/Faculdade/Aeds 2/Aeds 2.md",
+    "Faculdade/Faculdade/Aeds 2/Unidade 1/Unidade 1.md",
+    "Faculdade/Faculdade/Arquitetura de Computadores/Álgebra Booleana.md",
+    "Faculdade/Faculdade/Aeds 2/Unidade 3",
     "Faculdade/Faculdade/Arquitetura de Computadores/Imagens/Pasted image 20250924201124.png",
     "Faculdade/Faculdade/Arquitetura de Computadores/Imagens/Pasted image 20250924200848.png",
     "Faculdade/Faculdade/Arquitetura de Computadores/Imagens/Pasted image 20250924200841.png",
@@ -182,14 +195,11 @@
     "Faculdade/Faculdade/Arquitetura de Computadores/Imagens/Pasted image 20250924195450.png",
     "Faculdade/Faculdade/Arquitetura de Computadores/Sistema de Numeração e Representação de Dados.md",
     "Faculdade/Faculdade/Faculdade.md",
-    "Faculdade/Faculdade/Arquitetura de Computadores/Álgebra Booleana.md",
     "Faculdade/Faculdade/Arquitetura de Computadores/Imagens/Pasted image 20250924194251.png",
     "Faculdade/Faculdade/Arquitetura de Computadores/Arquitetura de Computadores.md",
     "Faculdade/Faculdade/Arquitetura de Computadores/Operações Aritméticas em Binário e Bases Associadas.md",
-    "Faculdade/Faculdade/Arquitetura de Computadores/Imagens/Pasted image 20250923202816.png",
     "Faculdade/Faculdade/Arquitetura de Computadores/Imagens",
     "Faculdade/Faculdade/Arquitetura de Computadores",
-    "Faculdade/Faculdade/Aeds 2/Unidade 1/Aeds 2.md",
     "Faculdade/Faculdade/Aeds 2/Unidade 1/Somatórios/Somatórios.md",
     "Somatorios.canvas",
     "Faculdade/Faculdade/Aeds 2/Unidade 1/Somatórios/Somatorios.canvas",
@@ -202,7 +212,6 @@
     "Faculdade/Faculdade/Engenharia de Software/Modelos Tradicionais.md",
     "Faculdade/Codigos/Trabalho Quick Sort/quickSort.java",
     "Faculdade/Codigos/Trabalho Quick Sort",
-    "Faculdade/Codigos/Nova pasta",
     "Curso de Java/Java.md",
     "README.md"
   ]
