@@ -22,6 +22,16 @@ A grande vantagens delas é que ela são potencias de 2 ($2^3$ = 8, e $2^4$ = 16
 **Para converter de Binário para Hexadecimal:** Agrupe os bits de 4 em 4.
 ![[Pasted image 20250923202816.png]]
 
+Para converter a parte real do número (depois do ponto) fazemos o seguinte processo:
+**Parte fracionária**: 0.75
+
+- 0.75×2=1.5→ pegamos o `1`
+    
+- 0.5×2=1.0→ pegamos o `1`
+    
+- A parte fracionária é `.11_2`
+
+[[Operações Aritméticas em Binário e Bases Associadas]]
 
 
 

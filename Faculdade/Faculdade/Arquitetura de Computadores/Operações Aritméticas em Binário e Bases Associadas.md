@@ -40,6 +40,10 @@ As operações em binário seguem regras simples. A mais importante é a
 
 
 
+[[Representação Fracionária e Complementos]]
+
+
+
 
 
  
