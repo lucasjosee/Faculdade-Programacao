@@ -11,6 +11,7 @@ class Celula
 {
     public int elemento;
     public Celula prox;
+    public Celula ant;
 
     public Celula()
     {
@@ -22,14 +23,15 @@ class Celula
     {
         this.elemento = x;
         this.prox = null;
+        this.ant = null;
     }
 }
 
-class listaFlexivel
+class listaDupla
 {
     private Celula primeiro, ultimo;
 
-    public listaFlexivel()
+    public lista()
     {
         ultimo = primeiro = new Celula();
     }
@@ -37,13 +39,15 @@ class listaFlexivel
     public void inserirFim(int x)
     {
         ultimo.prox = new Celula(x);
+        ultimo.prox.ant = ultimo;
         ultimo = ultimo.prox;
     }
 
     public void inserirInicio(int x)
     {
-
         Celula temp = new Celula(x);
+
+        temp.ant = primeiro;
 
         temp.prox = primeiro.prox;
         primeiro.prox = temp;
@@ -51,6 +55,10 @@ class listaFlexivel
         if(ultimo == primeiro)
         {
             ultimo = temp;
+        }
+        else
+        {
+            temp.prox.ant = temp;
         }
 
         temp = null;
@@ -63,13 +71,11 @@ class listaFlexivel
             throw new RuntimeException("Erro: lista vazia");
         }
 
-        Celula i;
-        for(i = primeiro.prox; i.prox != ultimo; i = i.prox);
-
-
         int elemento = ultimo.elemento;
-        ultimo = i;
-        i = ultimo.prox = null;
+
+        ultimo = ultimo.ant;
+        ultimo.prox.ant = null;
+        ultimo.prox = null;
 
         return elemento;
     }
@@ -86,6 +92,8 @@ class listaFlexivel
         primeiro = primeiro.prox;
 
         int elemento = primeiro.elemento;
+
+        temp.prox = primeiro.ant = null;
 
         temp.prox = null;
         temp = null;
@@ -140,89 +148,12 @@ class listaFlexivel
             for(int j = 0; j < pos; j++, i = i.prox);
 
             Celula temp = new Celula(x);
+            temp.ant = i;
             temp.prox = i.prox;
+            temp.ant.prox = temp.prox.ant = temp;
             i.prox = temp;
            
             temp = null;
         }
     }
-
-
-    //Exercicios
-
-    //1. Em nossa lista flexível, implemente um método que remove a segunda posição válida.
-    public int removerSegundaPos()
-    {
-        if (primeiro.prox == null || primeiro.prox.prox == null) 
-        {
-            throw new RuntimeException("Erro: não existe segunda posição na lista");
-        }
-
-        Celula temp = primeiro.prox.prox;
-
-        if (temp == ultimo) 
-        { 
-            ultimo = primeiro.prox;
-        }
-
-        int elemento = temp.elemento;
-        primeiro.prox.prox = temp.prox;
-        temp.prox = null;
-        temp = null;
-
-        return elemento;
-    }
-
-    //2. Em nossa lista flexível, implemente um método que retorna a soma os elementos contidos na mesma.
-    public int somaElementos()
-    {
-        if(ultimo == primeiro)
-        {
-            throw new RuntimeException("Erro: Lista vazia");
-        }
-
-        int soma = 0;
-
-        for(Celula i = primeiro.prox; i != null; i = i.prox)
-        {
-            soma += i.elemento;
-        }
-
-        return soma;
-    }
-
-    //3. Em nossa lista flexível, implemente um método que retorna o maior elemento contido na mesma.
-    public int maiorElemento()
-    {
-        if(ultimo == primeiro)
-        {
-            throw new RuntimeException("Erro: Lista vazia");
-        }
-
-        int maior = primeiro.prox.elemento;
-
-        for(Celula i = primeiro.prox.prox; i != null; i = i.prox)
-        {
-            if(i.elemento > maior)
-            {
-                maior = i.elemento;
-            }
-        }
-        return maior;
-    }
-
-    //4.Em nossa lista flexível, implemente um método que retorna o terceiro elemento supondo que o mesmo existe.
-    public int terceiroElemento()
-    {
-        if(primeiro.prox == null || primeiro.prox.prox == null || primeiro.prox.prox.prox == null)
-        {
-            throw new RuntimeException("Erro: Elemento não existe");
-        }
-
-        return primeiro.prox.prox.prox.elemento;
-    }
-
-    //5. Em nossa lista flexível, implemente um método que inverte a ordem dos seus elementos.
-    
 }
-

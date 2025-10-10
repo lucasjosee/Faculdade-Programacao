@@ -23,6 +23,8 @@ Em resumo:
 
 ![[Pasted image 20250924201124.png]]
 
+[[Simplificação de Expressões Booleanas]]
+
 
 
  
