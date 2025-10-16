@@ -7,6 +7,7 @@ public class main
 
 }
 
+//Classe que cria a celula que ira armazenar o elemento, nele está presente o ponteiro para a proxima celula
 class Celula
 {
     public int elemento;
@@ -25,6 +26,7 @@ class Celula
     }
 }
 
+//Classe que cria a lista, nela está seus atributos e metodos
 class listaFlexivel
 {
     private Celula primeiro, ultimo;
@@ -151,6 +153,7 @@ class listaFlexivel
     //Exercicios
 
     //1. Em nossa lista flexível, implemente um método que remove a segunda posição válida.
+
     public int removerSegundaPos()
     {
         if (primeiro.prox == null || primeiro.prox.prox == null) 

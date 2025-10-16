@@ -1,6 +1,6 @@
 //Aluno: Lucas José Souza Rodrigues
 //Ex: Expresso Booleana - TP 2
-/* 
+ 
 import java.util.Scanner;
 
 public class booleano 
