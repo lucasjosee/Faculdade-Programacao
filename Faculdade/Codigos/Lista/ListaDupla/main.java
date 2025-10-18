@@ -185,4 +185,9 @@ class ListaDupla
             temp = null;
         }
     }
+
+    public void quickSort()
+    {
+        
+    }
 }

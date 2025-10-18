@@ -180,7 +180,7 @@ class Matriz
         {
             throw new RuntimeException("Erro: Matriz não é quadratica.");
         }
-        
+
         Celula i, j;
         int conti, contj;
         for(i = inicio, conti = 0 ; conti < linha; conti++, i = i.inf)
@@ -190,6 +190,8 @@ class Matriz
             System.out.println(j.elemento + " ");
         }
     }
+
+    
 
 }
 

@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Faculdade/Faculdade/Aeds 2/Unidade 4/Unidade 4.md",
+                "file": "README.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Unidade 4"
+              "title": "README"
             }
           }
         ]
@@ -171,22 +171,29 @@
   },
   "active": "17af101aff69117a",
   "lastOpenFiles": [
-    "Faculdade/Codigos/Matriz Flexivel/main.java",
-    "Faculdade/Codigos/Matriz Flexivel",
-    "Faculdade/Codigos/Nova pasta",
-    "Faculdade/Faculdade/Aeds 2/Unidade 3/quicksort_relatorio.pdf",
-    "Faculdade/Faculdade/Aeds 2/Unidade 3/Shell Sort.md",
-    "Faculdade/Codigos/Pilha/Pilha flexivel/PilhaFlexivel.java",
-    "Faculdade/Codigos/Pilha/Pilha flexivel",
-    "Faculdade/Codigos/Pilha/Nova pasta",
-    "Faculdade/Codigos/Pilha",
-    "Faculdade/Codigos/Lista/ListaDupla/main.java",
-    "Faculdade/Codigos/Lista/ListaDupla/main.class",
-    "Faculdade/Codigos/Lista/ListaDupla/Celula.class",
-    "Faculdade/Faculdade/Aeds 2/Unidade 3/Imagens/Pasted image 20251007175958.png",
+    "Faculdade/Faculdade/Aeds 2/Unidade 4/Imagens/Pasted image 20251018140034.png",
+    "Faculdade/Faculdade/Aeds 2/Unidade 3/QuickSort.md",
+    "Sem título.canvas",
     "Faculdade/Faculdade/Aeds 2/Unidade 3/Ordenação Interna.md",
     "Faculdade/Faculdade/Aeds 2/Unidade 3/Unidade 3.md",
+    "Faculdade/Faculdade/Aeds 2/Unidade 3/Shell Sort.md",
+    "Faculdade/Faculdade/Aeds 2/Unidade 3/quicksort_relatorio.pdf",
     "Faculdade/Faculdade/Aeds 2/Unidade 3/Algoritmo de Bolha (Bubble Sort).md",
+    "Faculdade/Faculdade/Aeds 2/Unidade 1/Somatórios/Somatórios.md",
+    "Faculdade/Faculdade/Aeds 2/Unidade 4/Lista Flexível.md",
+    "Faculdade/Faculdade/Aeds 2/Unidade 4/Matriz Flexível.md",
+    "Faculdade/Faculdade/Aeds 2/Unidade 4/Estruturas de Dados Básicas Lineares.md",
+    "Faculdade/Faculdade/Aeds 2/Unidade 4/Unidade 4.md",
+    "Faculdade/Codigos/Matriz/Matriz x Lista/Matriz.class",
+    "Faculdade/Codigos/Matriz/Matriz x Lista/CelulaLista.class",
+    "Faculdade/Codigos/Matriz/Matriz x Lista/Celula.class",
+    "Faculdade/Codigos/Matriz/Matriz x Lista/main.class",
+    "Faculdade/Codigos/Matriz/Matriz x Lista/main.java",
+    "Faculdade/Codigos/Matriz/Matriz x Lista",
+    "Faculdade/Codigos/Matriz/Nova pasta",
+    "Faculdade/Codigos/Matriz/Matriz Flexivel/main.java",
+    "Faculdade/Codigos/Matriz/Matriz Flexivel",
+    "Faculdade/Faculdade/Aeds 2/Unidade 3/Imagens/Pasted image 20251007175958.png",
     "Faculdade/Faculdade/Arquitetura de Computadores/Simplificação de Expressões Booleanas.md",
     "Pasted image 20251006200329.png",
     "Faculdade/Faculdade/Arquitetura de Computadores/Imagens/Pasted image 20251006200111.png",
@@ -199,16 +206,11 @@
     "Faculdade/Faculdade/Arquitetura de Computadores/Sistema de Numeração e Representação de Dados.md",
     "Faculdade/Faculdade/Arquitetura de Computadores/Representação Fracionária e Complementos.md",
     "Faculdade/Faculdade/Arquitetura de Computadores/Operações Aritméticas em Binário e Bases Associadas.md",
-    "Faculdade/Faculdade/Aeds 2/Unidade 4/Lista Flexível.md",
-    "Faculdade/Faculdade/Aeds 2/Unidade 4/Unidade 4.md",
-    "Faculdade/Faculdade/Aeds 2/Unidade 4/Estruturas de Dados Básicas Lineares.md",
     "Faculdade/Faculdade/Aeds 2/Aeds 2.md",
     "Faculdade/Faculdade/Aeds 2/Unidade 1/Unidade 1.md",
     "Faculdade/Faculdade/Arquitetura de Computadores/Imagens/Pasted image 20250924200848.png",
     "Faculdade/Faculdade/Arquitetura de Computadores/Imagens/Pasted image 20250924200841.png",
-    "Faculdade/Faculdade/Arquitetura de Computadores/Imagens/Pasted image 20250924195702.png",
     "Faculdade/Faculdade/Faculdade.md",
-    "Faculdade/Faculdade/Aeds 2/Unidade 1/Somatórios/Somatórios.md",
     "Somatorios.canvas",
     "Faculdade/Faculdade/Aeds 2/Unidade 1/Somatórios/Somatorios.canvas",
     "Faculdade/Faculdade/Aeds 2/Main.canvas",
@@ -217,8 +219,6 @@
     "Faculdade/Faculdade/Engenharia de Software/Modelo de Entidade - Relacionamento.md",
     "Faculdade/Faculdade/Engenharia de Software/Modelos Ageis.md",
     "Faculdade/Faculdade/Engenharia de Software/Modelos de Processos.md",
-    "Faculdade/Faculdade/Engenharia de Software/Modelos Tradicionais.md",
-    "Curso de Java/Java.md",
-    "README.md"
+    "Faculdade/Faculdade/Engenharia de Software/Modelos Tradicionais.md"
   ]
 }

@@ -4,3 +4,6 @@ Os métodos de inserção criam uma nova célula e atribuem um valor a ela, e os
 
 #### Nó Cabeça:
 Célula café com leite, vazia, é usada como referencia inicial para o primeiro e ultimo. E a lista estará vazia quando o Primeiro e o Ultimo apontarem para o Nó Cabeça.
+
+Uma melhoria da lista é a matriz flexível:
+[[Matriz Flexível]]

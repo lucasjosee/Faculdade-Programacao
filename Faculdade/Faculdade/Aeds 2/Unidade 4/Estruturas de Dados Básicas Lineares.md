@@ -4,3 +4,5 @@ Uma classe autorreferencial é uma classe que aponta para uma classe do seu mesm
 Cada classe aponta para uma próxima.
 
 [[Lista Flexível]]
+[[Matriz Flexível]]
+
