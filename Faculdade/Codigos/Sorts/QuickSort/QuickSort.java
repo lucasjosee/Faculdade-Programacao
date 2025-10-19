@@ -14,12 +14,12 @@ public class QuickSort
         }
 
         System.out.println("Antes:");
-        //printArray(numeros);
+        printArray(numeros);
 
         sort(numeros, 0, numeros.length - 1);
 
         System.out.println("Depois:");
-        //printArray(numeros);
+        printArray(numeros);
     }
 
     private static void printArray(int[] array)

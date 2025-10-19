@@ -88,7 +88,7 @@ public class quickSort {
         {
             swap(array, esq, dir);
             int i = esq, j = dir;
-            int pivo = array[esq]; 
+            int pivo = array[dir]; 
             while (i <= j) 
             {
                 while (array[i] < pivo) i++;

@@ -1,0 +1,1 @@
+Método de ordenação baseado em divide-and-conquer, muito usado por ser muito ágil.

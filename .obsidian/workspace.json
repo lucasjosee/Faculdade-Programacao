@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "Faculdade/Faculdade/Aeds 2/Unidade 3/HeapSort.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "README"
+              "title": "HeapSort"
             }
           }
         ]
@@ -171,19 +171,24 @@
   },
   "active": "17af101aff69117a",
   "lastOpenFiles": [
-    "Faculdade/Faculdade/Aeds 2/Unidade 4/Imagens/Pasted image 20251018140034.png",
-    "Faculdade/Faculdade/Aeds 2/Unidade 3/QuickSort.md",
-    "Sem título.canvas",
+    "Faculdade/Faculdade/Aeds 2/Unidade 3/Imagens/Pasted image 20251019155239.png",
+    "Faculdade/Faculdade/Aeds 2/Unidade 3/HeapSort.md",
+    "Faculdade/Faculdade/Aeds 2/Unidade 3/Imagens/Pasted image 20251019154147.png",
+    "Faculdade/Faculdade/Aeds 2/Unidade 3/Imagens/Pasted image 20251019152116.png",
+    "Faculdade/Faculdade/Aeds 2/Unidade 4/Estruturas de Dados Básicas Lineares.md",
+    "Faculdade/Faculdade/Aeds 2/Unidade 3/Bubble Sort.md",
+    "Faculdade/Faculdade/Aeds 2/Unidade 4/Unidade 4.md",
+    "Faculdade/Faculdade/Aeds 2/Unidade 4/Lista Flexível.md",
     "Faculdade/Faculdade/Aeds 2/Unidade 3/Ordenação Interna.md",
+    "Faculdade/Faculdade/Aeds 2/Unidade 3/QuickSort.md",
+    "Faculdade/Faculdade/Aeds 2/Unidade 3/quicksort_relatorio.pdf",
+    "README.md",
+    "Faculdade/Faculdade/Aeds 2/Unidade 4/Imagens/Pasted image 20251018140034.png",
+    "Sem título.canvas",
     "Faculdade/Faculdade/Aeds 2/Unidade 3/Unidade 3.md",
     "Faculdade/Faculdade/Aeds 2/Unidade 3/Shell Sort.md",
-    "Faculdade/Faculdade/Aeds 2/Unidade 3/quicksort_relatorio.pdf",
-    "Faculdade/Faculdade/Aeds 2/Unidade 3/Algoritmo de Bolha (Bubble Sort).md",
     "Faculdade/Faculdade/Aeds 2/Unidade 1/Somatórios/Somatórios.md",
-    "Faculdade/Faculdade/Aeds 2/Unidade 4/Lista Flexível.md",
     "Faculdade/Faculdade/Aeds 2/Unidade 4/Matriz Flexível.md",
-    "Faculdade/Faculdade/Aeds 2/Unidade 4/Estruturas de Dados Básicas Lineares.md",
-    "Faculdade/Faculdade/Aeds 2/Unidade 4/Unidade 4.md",
     "Faculdade/Codigos/Matriz/Matriz x Lista/Matriz.class",
     "Faculdade/Codigos/Matriz/Matriz x Lista/CelulaLista.class",
     "Faculdade/Codigos/Matriz/Matriz x Lista/Celula.class",
@@ -202,14 +207,11 @@
     "Faculdade/Faculdade/Arquitetura de Computadores/Imagens/Pasted image 20251006200002.png",
     "Faculdade/Faculdade/Arquitetura de Computadores/Arquitetura de Computadores.md",
     "Faculdade/Faculdade/Arquitetura de Computadores/Álgebra Booleana.md",
-    "Faculdade/Faculdade/Aeds 2/Unidade 4/Imagens/Pasted image 20250929154451.png",
     "Faculdade/Faculdade/Arquitetura de Computadores/Sistema de Numeração e Representação de Dados.md",
     "Faculdade/Faculdade/Arquitetura de Computadores/Representação Fracionária e Complementos.md",
     "Faculdade/Faculdade/Arquitetura de Computadores/Operações Aritméticas em Binário e Bases Associadas.md",
     "Faculdade/Faculdade/Aeds 2/Aeds 2.md",
     "Faculdade/Faculdade/Aeds 2/Unidade 1/Unidade 1.md",
-    "Faculdade/Faculdade/Arquitetura de Computadores/Imagens/Pasted image 20250924200848.png",
-    "Faculdade/Faculdade/Arquitetura de Computadores/Imagens/Pasted image 20250924200841.png",
     "Faculdade/Faculdade/Faculdade.md",
     "Somatorios.canvas",
     "Faculdade/Faculdade/Aeds 2/Unidade 1/Somatórios/Somatorios.canvas",
@@ -217,8 +219,6 @@
     "Faculdade/Faculdade/Aeds 2/Unidade 1/Noções de Complexidade/Noções de Complexidade.md",
     "Faculdade/Faculdade/Engenharia de Software/Engenharia de Software.md",
     "Faculdade/Faculdade/Engenharia de Software/Modelo de Entidade - Relacionamento.md",
-    "Faculdade/Faculdade/Engenharia de Software/Modelos Ageis.md",
-    "Faculdade/Faculdade/Engenharia de Software/Modelos de Processos.md",
-    "Faculdade/Faculdade/Engenharia de Software/Modelos Tradicionais.md"
+    "Faculdade/Faculdade/Engenharia de Software/Modelos Ageis.md"
   ]
 }

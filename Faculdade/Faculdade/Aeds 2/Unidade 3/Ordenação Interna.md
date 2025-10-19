@@ -1,5 +1,7 @@
-[[Algoritmo de Bolha (Bubble Sort)]]
+[[Bubble Sort]]
 [[Shell Sort]]
 [[QuickSort]]
+[[HeapSort]]
+
 
 

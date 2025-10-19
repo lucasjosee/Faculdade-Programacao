@@ -4,15 +4,16 @@ public class main
     {
         ListaDupla lista = new ListaDupla();
 
-        lista.inserirFim(5);
-        lista.inserirInicio(4);
-        lista.inserirInicio(3);
+        lista.inserirFim(1);
+        
+        lista.inserirInicio(10);
+        lista.inserirInicio(11);
         lista.inserir(10, 3);
         lista.mostrar();
 
         System.out.println();
 
-        lista.removerFim();
+        lista.sort();
         lista.mostrar();
     }
 
@@ -186,8 +187,43 @@ class ListaDupla
         }
     }
 
-    public void quickSort()
+    public void sort()
     {
-        
+        quickSort(primeiro, ultimo);
+    }
+
+    public void quickSort(Celula primeiro, Celula ultimo)
+    {
+        if(ultimo != null && primeiro != ultimo && primeiro != ultimo.prox)
+        {
+            Celula pivo = particion(primeiro, ultimo);
+
+            quickSort(primeiro, pivo.ant);
+            quickSort(pivo.prox, ultimo);
+        }
+    }
+
+    public Celula particion(Celula primeiro, Celula ultimo)
+    {
+        int valorCelula = ultimo.elemento;
+
+        Celula i = primeiro;
+        for(Celula j = primeiro; j != ultimo; j = j.prox)
+        {
+            if(j.elemento < valorCelula)
+            {
+                int temp = i.elemento;
+                i.elemento = j.elemento;
+                j.elemento = temp;
+                
+                i = i.prox;
+            }
+        }
+
+        int temp = i.elemento;
+        i.elemento = ultimo.elemento;
+        ultimo.elemento = temp;
+
+        return i;
     }
 }
