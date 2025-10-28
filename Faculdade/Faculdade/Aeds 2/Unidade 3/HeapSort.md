@@ -36,4 +36,15 @@ Com base nisso, o HeapSort tem duas etapas: Criar a heap, e remover da heap.
 #### Como Criar uma Heap?
 Pegamos o array de números a ser ordenados e colocamos o primeiro elemento como o cabeça. Em seguida, comparamos o primeiro filho do nó cabeça que é o filha-esquerda usando a formula dele, se o filho for maior, trocamos. Depois, fazemos esse mesmo processo com a filha-direita. Feitas as comparações, pegamos o próximo elemento do array como alvo de comparação e comparamos seus nós filhos com seus parentes. Depois de fazer isso com todos os elementos do array, teremos nossa max-heap. (Os nós filhos que são comparados com seus parentes, para isso usamos a formula 3: i/2.)
 
+### Heapify:
+O **`heapify`** é a função crucial do HeapSort, atuando como um motor de reajuste.
+
+Seu objetivo é **restaurar a propriedade de Max-Heap** (pai maior que os filhos) em uma subárvore após uma troca ou modificação. Ele faz isso em um processo de três passos:
+
+1. **Compara** o pai com seus filhos para encontrar o maior valor.
+    
+2. **Troca** o pai com o maior filho se houver uma violação.
+    
+3. **Repete recursivamente** esse processo no ramo que recebeu o valor original do pai, forçando o valor menor a descer até que a propriedade Max-Heap seja restaurada por completo naquela direção.
+
 

@@ -1,11 +1,9 @@
-import java.io.BufferedReader;
-import java.io.FileReader;
-import java.io.IOException;
-import java.util.Arrays;
-import java.util.Scanner;
+import java.io.*;
+import java.util.*;
 
-public class Game {
-
+public class Game 
+{
+    // atributos
     private int id;
     private String name;
     private String releaseDate;
@@ -22,10 +20,17 @@ public class Game {
     private String[] tags;
 
     public static int inicio = 0;
+    public static long comparacoes = 0;
+    public static long movimentacoes = 0;
 
+    // construtor padrão
     public Game() {}
 
-    public Game(int id, String name, String releaseDate, int estimatedOwners, float price, String[] supportedLanguages, int metacriticScore, float userScore, int achievements, String[] publishers, String[] developers, String[] categories, String[] genres, String[] tags) {
+    // construtor completo
+    public Game(int id, String name, String releaseDate, int estimatedOwners, float price, String[] supportedLanguages,
+                int metacriticScore, float userScore, int achievements, String[] publishers, String[] developers,
+                String[] categories, String[] genres, String[] tags) 
+    {
         this.id = id;
         this.name = name;
         this.releaseDate = releaseDate;
@@ -42,207 +47,292 @@ public class Game {
         this.tags = tags;
     }
 
-    public void mostrar() {
-        System.out.print("=> " + this.id + " ## " + this.name + " ## " + this.releaseDate + " ## " + this.estimatedOwners + " ## " + this.price + " ## ");
-        System.out.print(Arrays.toString(this.supportedLanguages) + " ## ");
-        System.out.print(this.metacriticScore + " ## " + this.userScore + " ## " + this.achievements + " ## ");
-        System.out.print(Arrays.toString(this.publishers) + " ## ");
-        System.out.print(Arrays.toString(this.developers) + " ## ");
-        System.out.print(Arrays.toString(this.categories) + " ## ");
-        System.out.print(Arrays.toString(this.genres) + " ## ");
-        System.out.print(Arrays.toString(this.tags) + " ##\n");
+    // getters
+    public int getId() { return id; }
+    public float getPrice() { return price; }
+
+    // método para imprimir o jogo completo
+    public void mostrar() 
+    {
+        System.out.print("=> " + id + " ## " + name + " ## " + releaseDate + " ## " + estimatedOwners + " ## " + price + " ## ");
+        System.out.print(Arrays.toString(supportedLanguages) + " ## ");
+        System.out.print(metacriticScore + " ## " + userScore + " ## " + achievements + " ## ");
+        System.out.print(Arrays.toString(publishers) + " ## ");
+        System.out.print(Arrays.toString(developers) + " ## ");
+        System.out.print(Arrays.toString(categories) + " ## ");
+        System.out.print(Arrays.toString(genres) + " ## ");
+        System.out.print(Arrays.toString(tags) + " ##\n");
     }
 
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        String idDeEntrada;
+    // ===================== MAIN =====================
+    public static void main(String[] args) throws Exception 
+    {
 
-        while (!(idDeEntrada = scanner.nextLine()).equalsIgnoreCase("FIM")) {
-            if (idDeEntrada.isEmpty()) continue;
-            int idParaBuscar = stringParaInt(idDeEntrada);
-            boolean encontrado = false;
 
-            try (BufferedReader br = new BufferedReader(new FileReader("/tmp/games.csv"))) {
-                br.readLine();
-                String linha;
+        Scanner sc = new Scanner(System.in);
 
-                while ((linha = br.readLine()) != null) {
-                    inicio = 0;
-                    String idStr = proximoCampo(linha);
-                    int idAtual = stringParaInt(idStr);
+        // corrige problema de acentuação no console
+        try {
+            System.setOut(new PrintStream(new FileOutputStream(FileDescriptor.out), true, "UTF-8"));
+        } catch (Exception e) {}
 
-                    if (idAtual == idParaBuscar) {
-                        String nomeStr = proximoCampo(linha);
-                        String dataStr = proximoCampo(linha);
-                        String donosStr = proximoCampo(linha);
-                        String precoStr = proximoCampo(linha);
-                        String linguasStr = proximoCampo(linha);
-                        String metaScoreStr = proximoCampo(linha);
-                        String userScoreStr = proximoCampo(linha);
-                        String conquistasStr = proximoCampo(linha);
-                        String publishersStr = proximoCampo(linha);
-                        String developersStr = proximoCampo(linha);
-                        String categoriesStr = proximoCampo(linha);
-                        String genresStr = proximoCampo(linha);
-                        String tagsStr = proximoCampo(linha);
-                        
-                        String dataFormatada = formatarData(dataStr);
-                        int donos = stringParaInt(donosStr.substring(donosStr.indexOf('-') + 1).trim());
-                        float preco = precoStr.equalsIgnoreCase("Free to Play") ? 0.0f : stringParaFloat(precoStr);
-                        String[] linguas = stringParaArray(linguasStr);
-                        int metaScore = stringParaInt(metaScoreStr);
-                        float userScore = userScoreStr.equalsIgnoreCase("tbd") ? -1.0f : stringParaFloat(userScoreStr);
-                        int conquistas = stringParaInt(conquistasStr);
-                        String[] publishers = stringParaArray(publishersStr);
-                        String[] developers = stringParaArray(developersStr);
-                        String[] categories = stringParaArray(categoriesStr);
-                        String[] genres = stringParaArray(genresStr);
-                        String[] tags = stringParaArray(tagsStr);
+        Game[] jogos = new Game[5000];
+        int count = 0;
 
-                        Game jogo = new Game(idAtual, nomeStr, dataFormatada, donos, preco, linguas, metaScore, userScore, conquistas, publishers, developers, categories, genres, tags);
-                        jogo.mostrar();
-                        encontrado = true;
-                        break;
-                    }
-                }
-            } catch (IOException e) {
-                System.err.println("Erro ao ler o arquivo GAMES.CSV: " + e.getMessage());
-            }
-
-            if (!encontrado) {
-                 System.out.println("ID " + idParaBuscar + " nao encontrado.");
-            }
+        // leitura dos IDs até FIM
+        String entrada = sc.nextLine();
+        while (!entrada.equals("FIM")) 
+        {
+            int id = stringParaInt(entrada);
+            Game g = lerGamePorId(id);
+            if (g != null) jogos[count++] = g;
+            entrada = sc.nextLine();
         }
-        scanner.close();
+
+        long inicioTempo = System.currentTimeMillis();
+
+        // ordena com MergeSort
+        mergeSort(jogos, 0, count - 1);
+
+        long fimTempo = System.currentTimeMillis();
+        double tempo = (fimTempo - inicioTempo) / 1000.0;
+
+        // imprime as 5 linhas completas mais caras
+        System.out.println("| 5 pre\u00E7os mais caros |");
+        for (int i = count - 1; i >= count - 5 && i >= 0; i--) 
+        {
+            jogos[i].mostrar();
+        }
+
+        // imprime as 5 linhas completas mais baratas
+        System.out.println();
+        System.out.println("| 5 pre\u00E7os mais baratos |");
+        for (int i = 0; i < 5 && i < count; i++) 
+        {
+            jogos[i].mostrar();
+        }
+
+        // cria log
+        FileWriter fw = new FileWriter("892665_mergesort.txt");
+        fw.write("892665\t" + comparacoes + "\t" + movimentacoes + "\t" + tempo);
+        fw.close();
+
+        sc.close();
     }
 
-    public static String proximoCampo(String linha) {
+    // ===================== MERGESORT =====================
+    public static void mergeSort(Game[] array, int esq, int dir) 
+    {
+        if (esq < dir) 
+        {
+            int meio = (esq + dir) / 2;
+            mergeSort(array, esq, meio);
+            mergeSort(array, meio + 1, dir);
+            intercalar(array, esq, meio, dir);
+        }
+    }
+
+    // intercala duas metades ordenadas
+    public static void intercalar(Game[] array, int esq, int meio, int dir) 
+    {
+        int n1 = meio - esq + 1;
+        int n2 = dir - meio;
+
+        Game[] esquerda = new Game[n1];
+        Game[] direita = new Game[n2];
+
+        for (int i = 0; i < n1; i++) esquerda[i] = array[esq + i];
+        for (int j = 0; j < n2; j++) direita[j] = array[meio + 1 + j];
+
+        int i = 0, j = 0, k = esq;
+
+        while (i < n1 && j < n2) 
+        {
+            comparacoes++;
+            if (compararGames(esquerda[i], direita[j]) <= 0) 
+            {
+                array[k] = esquerda[i];
+                i++;
+            } 
+            else 
+            {
+                array[k] = direita[j];
+                j++;
+            }
+            movimentacoes++;
+            k++;
+        }
+
+        while (i < n1) 
+        {
+            array[k++] = esquerda[i++];
+            movimentacoes++;
+        }
+
+        while (j < n2) 
+        {
+            array[k++] = direita[j++];
+            movimentacoes++;
+        }
+    }
+
+    // compara por preço e desempata por id
+    public static int compararGames(Game a, Game b) 
+    {
+        if (a.getPrice() < b.getPrice()) return -1;
+        else if (a.getPrice() > b.getPrice()) return 1;
+        else 
+        {
+            if (a.getId() < b.getId()) return -1;
+            else if (a.getId() > b.getId()) return 1;
+            else return 0;
+        }
+    }
+
+    // ===================== LEITURA DO CSV =====================
+    public static Game lerGamePorId(int idProcurado) 
+    {
+        BufferedReader br = null;
+        try 
+        {
+            br = new BufferedReader(new FileReader("/tmp/games.csv"));
+            br.readLine(); 
+            String linha = br.readLine();
+
+            while (linha != null) 
+            {
+                inicio = 0;
+                String idStr = proximoCampo(linha);
+                int id = stringParaInt(idStr);
+
+                if (id == idProcurado) 
+                {
+                    String nome = proximoCampo(linha);
+                    String data = formatarData(proximoCampo(linha));
+                    int donos = stringParaInt(proximoCampo(linha));
+                    float preco = stringParaFloat(proximoCampo(linha));
+                    String[] linguas = stringParaArray(proximoCampo(linha));
+                    int meta = stringParaInt(proximoCampo(linha));
+                    float user = stringParaFloat(proximoCampo(linha));
+                    int conquistas = stringParaInt(proximoCampo(linha));
+                    String[] pubs = stringParaArray(proximoCampo(linha));
+                    String[] devs = stringParaArray(proximoCampo(linha));
+                    String[] cats = stringParaArray(proximoCampo(linha));
+                    String[] gens = stringParaArray(proximoCampo(linha));
+                    String[] tags = stringParaArray(proximoCampo(linha));
+
+                    return new Game(id, nome, data, donos, preco, linguas, meta, user, conquistas, pubs, devs, cats, gens, tags);
+                }
+                linha = br.readLine();
+            }
+
+        } catch (IOException e) {
+            System.out.println("Erro ao ler o arquivo.");
+        } finally {
+            try { if (br != null) br.close(); } catch (IOException e) {}
+        }
+        return null;
+    }
+
+    // ===================== AUXILIARES =====================
+    public static String proximoCampo(String linha) 
+    {
         if (inicio >= linha.length()) return "";
-        
         String campo = "";
         int i = inicio;
-        boolean dentroDeAspas = false;
+        boolean aspas = false;
 
-        if (linha.charAt(i) == '"') {
-            dentroDeAspas = true;
-            i++;
+        if (linha.charAt(i) == '"') { aspas = true; i++; }
+
+        while (i < linha.length()) 
+        {
+            char c = linha.charAt(i);
+            if (aspas && c == '"') { i++; break; }
+            else if (!aspas && c == ',') break;
+            else { campo += c; i++; }
         }
 
-        while (i < linha.length()) {
-            if (dentroDeAspas && linha.charAt(i) == '"') {
-                i++; 
-                break;
-            }
-            if (!dentroDeAspas && linha.charAt(i) == ',') {
-                break;
-            }
-            campo += linha.charAt(i);
-            i++;
-        }
-        
-        if (i < linha.length() && linha.charAt(i) == ',') {
-            i++;
-        }
-
+        if (i < linha.length() && linha.charAt(i) == ',') i++;
         inicio = i;
         return campo;
     }
 
-    public static String formatarData(String dataStr) {
-        String dia = "", mesStr = "", ano = "";
-        String mesNum = "01"; 
+    public static String formatarData(String s) 
+    {
+        if (s.length() == 4) return "01/01/" + s;
+        String mes = "", dia = "", ano = "";
         int parte = 0;
 
-        for (int i = 0; i < dataStr.length(); i++) {
-            char c = dataStr.charAt(i);
-            if (c == ' ') {
-                parte++;
-            } else if (parte == 0) {
-                mesStr += c;
-            } else if (parte == 1) {
-                if (c != ',') dia += c;
-            } else if (parte == 2) {
-                ano += c;
-            }
-        }
-        if (ano.isEmpty()) {
-            ano = mesStr;
-            mesStr = "Jan"; 
-            dia = "01";
-        }
-        if(dia.isEmpty()) dia = "01";
-
-        String[] meses = {"Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"};
-        for(int i = 0; i < meses.length; i++){
-            if(mesStr.equalsIgnoreCase(meses[i])){
-                mesNum = (i < 9) ? "0" + (i+1) : "" + (i+1);
-                break;
-            }
-        }
-        return (dia.length() == 1 ? "0" + dia : dia) + "/" + mesNum + "/" + ano;
-    }
-    
-    public static String[] stringParaArray(String s) {
-        if (s == null || s.isEmpty()) return new String[0];
-
-        s = s.replaceAll("^\\[|]$|'", "");
-
-        String[] temp = new String[100];
-        int contador = 0;
-        String palavra = "";
-
-        for (int i = 0; i < s.length(); i++) {
-            if (s.charAt(i) == ',') {
-                if (!palavra.isEmpty()) {
-                    temp[contador++] = palavra.trim();
-                    palavra = "";
-                }
-                while (i + 1 < s.length() && s.charAt(i + 1) == ' ') {
-                    i++;
-                }
-            } else {
-                palavra += s.charAt(i);
-            }
-        }
-        if (!palavra.isEmpty()) {
-            temp[contador++] = palavra.trim();
-        }
-
-        String[] resultado = new String[contador];
-        for (int i = 0; i < contador; i++) {
-            resultado[i] = temp[i];
-        }
-        return resultado;
-    }
-
-    public static int stringParaInt(String s) {
-        if (s == null || s.isEmpty()) return 0;
-        int numero = 0;
-        for (int i = 0; i < s.length(); i++) {
+        for (int i = 0; i < s.length(); i++) 
+        {
             char c = s.charAt(i);
-            if (c >= '0' && c <= '9') {
-                numero = (numero * 10) + (c - '0');
-            }
+            if (c == ' ') parte++;
+            else if (parte == 0) mes += c;
+            else if (parte == 1 && c != ',') dia += c;
+            else if (parte == 2) ano += c;
         }
-        return numero;
+
+        if (dia.equals("")) dia = "01";
+        int mesNum = 1;
+        String[] meses = {"Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"};
+        for (int i = 0; i < 12; i++) if (mes.equals(meses[i])) mesNum = i + 1;
+
+        String mesStr = (mesNum < 10 ? "0" + mesNum : "" + mesNum);
+        return (dia.length() == 1 ? "0" + dia : dia) + "/" + mesStr + "/" + ano;
     }
 
-    public static float stringParaFloat(String s) {
-        if (s == null || s.isEmpty()) return 0.0f;
-        float numero = 0;
+    public static String[] stringParaArray(String s) 
+    {
+        String[] temp = new String[50];
+        int cont = 0;
+        String atual = "";
+        for (int i = 0; i < s.length(); i++) 
+        {
+            char c = s.charAt(i);
+            if (c == ',' || c == ';') 
+            {
+                if (atual.length() > 0) 
+                {
+                    temp[cont] = atual.trim();
+                    cont++;
+                    atual = "";
+                }
+            } 
+            else if (c != '[' && c != ']' && c != '\'' && c != '\"') atual += c;
+        }
+        if (atual.length() > 0) temp[cont++] = atual.trim();
+
+        String[] res = new String[cont];
+        for (int i = 0; i < cont; i++) res[i] = temp[i];
+        return res;
+    }
+
+    public static int stringParaInt(String s) 
+    {
+        int n = 0;
+        for (int i = 0; i < s.length(); i++) 
+        {
+            char c = s.charAt(i);
+            if (c >= '0' && c <= '9') n = n * 10 + (c - '0');
+        }
+        return n;
+    }
+
+    public static float stringParaFloat(String s) 
+    {
+        float num = 0;
         int divisor = 1;
-        boolean posPonto = false;
-        for (int i = 0; i < s.length(); i++) {
+        boolean decimal = false;
+        for (int i = 0; i < s.length(); i++) 
+        {
             char c = s.charAt(i);
-            if (c == '.') {
-                posPonto = true;
-            } else if (c >= '0' && c <= '9'){
-                if (posPonto) {
-                    divisor *= 10;
-                }
-                numero = (numero * 10) + (c - '0');
+            if (c == '.') decimal = true;
+            else if (c >= '0' && c <= '9') 
+            {
+                num = num * 10 + (c - '0');
+                if (decimal) divisor *= 10;
             }
         }
-        return (divisor == 1) ? numero : numero / divisor;
+        return num / divisor;
     }
 }
