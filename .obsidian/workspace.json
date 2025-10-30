@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Faculdade/Faculdade/Aeds 2/Ponteiro em C/Ponteiro em C.md",
+                "file": "Faculdade/Faculdade/Engenharia de Software/Diagrama de Classe.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Ponteiro em C"
+              "title": "Diagrama de Classe"
             }
           }
         ]
@@ -169,22 +169,30 @@
       "bases:Criar nova base": false
     }
   },
-  "active": "17af101aff69117a",
+  "active": "c77ad8bc5c509cb1",
   "lastOpenFiles": [
-    "Faculdade/Codigos/Lista/ListaFlexivel/C/main.c",
-    "Faculdade/Codigos/Lista/ListaFlexivel/Java/main.java",
-    "Faculdade/Codigos/Lista/ListaFlexivel/C",
-    "Faculdade/Codigos/Lista/ListaFlexivel/Nova pasta",
-    "Faculdade/Codigos/Lista/ListaFlexivel/Java",
-    "Faculdade/Faculdade/Aeds 2/Aeds 2.md",
+    "Faculdade/Faculdade/Engenharia de Software/imagens/Pasted image 20251029230147.png",
+    "Faculdade/Faculdade/Engenharia de Software/imagens/Pasted image 20251029230030.png",
+    "Faculdade/Faculdade/Engenharia de Software/imagens/Pasted image 20251029225959.png",
+    "Faculdade/Faculdade/Engenharia de Software/Diagrama de casos de uso.md",
+    "Faculdade/Faculdade/Engenharia de Software/Diagrama de Classe.md",
+    "Faculdade/Faculdade/Engenharia de Software/UML.md",
+    "Faculdade/Codigos/Exercicios/Java/Arvore de numeros/Arvore.class",
+    "Faculdade/Codigos/Exercicios/Java/Arvore de numeros/Lista.class",
+    "Faculdade/Codigos/Exercicios/Java/Arvore de numeros/No.class",
+    "Faculdade/Codigos/Exercicios/Java/Arvore de numeros/Celula.class",
+    "Faculdade/Codigos/Exercicios/Java/Arvore de numeros/main.class",
+    "Faculdade/Codigos/Exercicios/Java/Arvore de numeros/main.java",
+    "Faculdade/Codigos/Exercicios/Java/Arvore de numeros",
+    "Faculdade/Codigos/Exercicios/Java/Nova pasta",
+    "Faculdade/Codigos/Exercicios/C/ArvoreArvoreLista/main.c",
+    "Faculdade/Codigos/Exercicios/C/ArvoreArvoreLista",
+    "Faculdade/Faculdade/Engenharia de Software/imagens/Pasted image 20251029112223.png",
+    "Faculdade/Faculdade/Engenharia de Software/imagens/Pasted image 20251029112207.png",
+    "Faculdade/Faculdade/Engenharia de Software/Engenharia de Software.md",
     "Faculdade/Faculdade/Aeds 2/Ponteiro em C/Ponteiro em C.md",
+    "Faculdade/Faculdade/Aeds 2/Aeds 2.md",
     "Faculdade/Faculdade/Aeds 2/Unidade 5/Árvore Binária.md",
-    "Faculdade/Faculdade/Aeds 2/Ponteiro em C",
-    "Faculdade/Faculdade/Aeds 2/Unidade 5/Sem título",
-    "Faculdade/Codigos/Árvore Binária/Arvore.class",
-    "Faculdade/Codigos/Árvore Binária/No.class",
-    "Faculdade/Codigos/Árvore Binária/main.class",
-    "Faculdade/Codigos/Árvore Binária/main.java",
     "Faculdade/Faculdade/Aeds 2/Unidade 5/Unidade 5.md",
     "Faculdade/Faculdade/Aeds 2/Unidade 3/HeapSort.md",
     "Faculdade/Faculdade/Aeds 2/Unidade 3/Imagens/Pasted image 20251019155239.png",
@@ -206,20 +214,12 @@
     "Faculdade/Faculdade/Aeds 2/Unidade 3/Imagens/Pasted image 20251007175958.png",
     "Faculdade/Faculdade/Arquitetura de Computadores/Simplificação de Expressões Booleanas.md",
     "Pasted image 20251006200329.png",
-    "Faculdade/Faculdade/Arquitetura de Computadores/Imagens/Pasted image 20251006200111.png",
-    "Faculdade/Faculdade/Arquitetura de Computadores/Imagens/Pasted image 20250924201124.png",
-    "Faculdade/Faculdade/Arquitetura de Computadores/Imagens/Pasted image 20251006200159.png",
-    "Faculdade/Faculdade/Arquitetura de Computadores/Imagens/Pasted image 20251006200002.png",
     "Faculdade/Faculdade/Arquitetura de Computadores/Arquitetura de Computadores.md",
     "Faculdade/Faculdade/Arquitetura de Computadores/Álgebra Booleana.md",
     "Faculdade/Faculdade/Arquitetura de Computadores/Sistema de Numeração e Representação de Dados.md",
     "Faculdade/Faculdade/Arquitetura de Computadores/Representação Fracionária e Complementos.md",
-    "Faculdade/Faculdade/Arquitetura de Computadores/Operações Aritméticas em Binário e Bases Associadas.md",
-    "Faculdade/Faculdade/Aeds 2/Unidade 1/Unidade 1.md",
-    "Faculdade/Faculdade/Faculdade.md",
     "Somatorios.canvas",
     "Faculdade/Faculdade/Aeds 2/Unidade 1/Somatórios/Somatorios.canvas",
-    "Faculdade/Faculdade/Aeds 2/Main.canvas",
-    "Faculdade/Faculdade/Aeds 2/Unidade 1/Noções de Complexidade/Noções de Complexidade.md"
+    "Faculdade/Faculdade/Aeds 2/Main.canvas"
   ]
 }
