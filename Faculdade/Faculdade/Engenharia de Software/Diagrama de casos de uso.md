@@ -40,7 +40,6 @@ Os atores são os próprios stakeholders.
 
 ###### Relacionamento entre casos de uso:
 1. Generalização(Herança);
-2. 
-3. Extensão(extend);
-4. Inclusão(include);
+2. Extensão(extend);
+3. Inclusão(include);
 
