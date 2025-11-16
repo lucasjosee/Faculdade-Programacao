@@ -5,8 +5,8 @@ Tópicos Principais:
 3. [[Unidade 4]]
 4. [[Unidade 5]]
 
-Tópicos Secundarios:
-1. [[Ponteiro em C]]
+Tópicos Secundários:
+
 
 
 

@@ -59,7 +59,6 @@ public class QuickSort
                 j--;
             }
         }
-
         if (esquerda < j)
         {
             sort(array, esquerda, j);

@@ -46,8 +46,9 @@ void mostrar(No* topo)
 {
 	if(topo != NULL)
 	{
+		mostrar(topo->prox);
 		printf("%d ", topo->elemento);
-		mostrar(topo->prox);	
+			
 	}
 }
 
@@ -103,9 +104,6 @@ int main()
 	inserirPilha(7, p);
 	inserirPilha(100, p);
 	mostrar(p->topo);
-	printf("%d ", somar(p->topo));
-	printf("%d", maiorRec(p->topo
-	));
 	
 }
 

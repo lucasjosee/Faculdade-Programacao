@@ -92,4 +92,33 @@ class Arvore
         return pesquisarRec(atual.direita, n);
 
     }
+
+    int getMaior()
+    {
+        int i;
+
+        if(raiz != null)
+        {
+            for(No j = raiz; j != null; j = j.dir);
+            i = j.elemento;
+
+            return i;
+        }
+        
+    }
+
+    int getMenor()
+    {
+        int i;
+
+        if(raiz != null)
+        {
+            for(No j = raiz; j != null; j = j.esq);
+            i = j.elemento;
+
+            return i;
+        }
+        
+    }
+
 }
