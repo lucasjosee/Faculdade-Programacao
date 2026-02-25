@@ -14,7 +14,7 @@ while (esq <= dir)
 	 if (diferença == 0)
 	   { 
 		 resp = true; esq = n;
-		  } 
+		} 
 		 else if (diferença > 0)
 		 { 
 		 esq = meio + 1;
