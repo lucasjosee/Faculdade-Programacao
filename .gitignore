@@ -1,0 +1,18 @@
+# Arquivos de workspace (causam a maioria dos conflitos)
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.obsidian/graph.json
+
+# Cache e logs
+.obsidian/cache/
+.obsidian/indexed-db/
+*.log
+
+# Caso você use plugins que geram arquivos temporários
+.obsidian/plugins/*/data.json
+# Nota: Alguns usuários preferem SINCRONIZAR as configurações dos plugins. 
+# Se você quer a mesma configuração em todo lugar, remova a linha acima.
+
+# Arquivos do Sistema Operacional
+.DS_Store
+Thumbs.db
