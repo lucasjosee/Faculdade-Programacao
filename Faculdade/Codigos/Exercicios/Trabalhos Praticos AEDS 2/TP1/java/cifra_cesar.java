@@ -1,53 +1,45 @@
-import java.util.Scanner;
+/* 
+ * Aluno: Lucas José Souza Rodrigues
+ * TP 01 - Q1
+*/  
 
 public class cifra_cesar
 {
     public static void main(String[] args)
     {
-        Scanner sc = new Scanner(System.in);
+       
+        String entrada = MyIO.readLine(); 
 
-        String entrada = sc.nextLine(); 
-
-        while(!isFIM(entrada)) //Caso a palavra de entrada seja FIM, programa para
+        while(!isFIM(entrada)) 
         {
             int tamanho = entrada.length();
 
             char[] resultado = criptografia(entrada, tamanho);
             
-            for(int i = 0; i < tamanho; i++)
-            {
-                System.out.print(resultado[i]);
-            }
-            System.out.println();
+            MyIO.println(new String(resultado)); //Tranforma o char[] em string e imprime
 
-            entrada = sc.nextLine();
+            entrada = MyIO.readLine();
         }
     }
 
     static char[] criptografia(String palavra, int n)
     {
-        char[] result = new char[n]; //String que ira receber a criptografia
+        char[] result = new char[n]; 
 
-        char c;
         for(int i = 0; i < n; i++)
         {
-            c = (char) (palavra.charAt(i) + 3); //Somando 3 no codigo ASCII do caractere
-            result[i] = c;
+            result[i] = (char) (palavra.charAt(i) + 3); //Soma 3 no codigo ascii do caractere 
         }
         return result;
-
     }
 
     static boolean isFIM(String e)
     {
-        if(e.charAt(0) == 'F' && e.charAt(1) == 'I' && e.charAt(2) == 'M')
+        boolean resp = false;
+        if(e.length() == 3 && e.charAt(0) == 'F' && e.charAt(1) == 'I' && e.charAt(2) == 'M')
         {
-            return true;
+            resp = true;
         }
-        else
-        {
-            return false;
-        }
+        return resp;
     }
 }
-

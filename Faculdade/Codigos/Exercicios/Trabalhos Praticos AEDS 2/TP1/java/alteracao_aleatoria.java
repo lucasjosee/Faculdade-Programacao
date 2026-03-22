@@ -1,3 +1,8 @@
+/* 
+ * Aluno: Lucas José Souza Rodrigues
+ * TP 01 - Q2
+*/  
+
 import java.util.Scanner;
 import java.util.Random;
 
