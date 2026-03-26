@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int* juntar(int array1[], int tam1, int array2[], int tam2);
+void imprimir(int array[], int tam);
 void ordenar(int n[], int tamanho);
 void ordenarDecrescente(int n[], int tamanho);
 
@@ -35,32 +35,16 @@ int main()
     ordenar(par, j);
     ordenarDecrescente(impar, k);
 
-    int *result = juntar(par, j, impar, k);
-
-    for(int f = 0; f < n; f++)
-    {
-        printf("%d\n", result[f]);
-    }
-
-    free(result);
+    imprimir(par, j);
+    imprimir(impar, k);
 }
 
-int* juntar(int array1[], int tam1, int array2[], int tam2)
+void imprimir(int array[], int tam)
 {
-    int *result = (int*) malloc((tam1 + tam2) * sizeof(int));
-
-    int i;
-    for(i = 0; i < tam1; i++)
+    for(int i = 0; i < tam; i++)
     {
-        result[i] = array1[i];
+        printf("%d\n", array[i]);
     }
-    
-    for(int f = 0; f < tam2; f++)
-    {
-        result[i + f] = array2[f];
-    }
-
-    return result;
 }
 
 void ordenar(int n[], int tamanho)

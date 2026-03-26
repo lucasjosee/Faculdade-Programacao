@@ -11,46 +11,34 @@ int main()
     while(fgets(entrada, 1000, stdin) != NULL)
     {
         entrada[strcspn(entrada, "\n")] = '\0';
-        balanco(entrada, 1000);
+        balanco(entrada, strlen(entrada));
     }
 }
 
 void balanco(char entrada[], int tamanho)
 {
-    int flag = 1;
+    char pilha[1000];
+    int topo = -1;
 
-    for(int i = 0; i < tamanho - 1; i++)
+    for(int i = 0; i < tamanho; i++)
     {
         if(entrada[i] == '(')
         {
-            for(int j = i + 1; j < tamanho; j++)
-            {
-                if(entrada[j] == ')')
-                {
-                    entrada[j] = 1;
-                    flag = 0;
-                    j = tamanho;
-                }
-                else
-                {
-                    flag = 1;
-                }
-            }
-            if(flag == 1)
+            topo++;
+            pilha[topo] = '(';
+        }
+        else if(entrada[i] == ')')
+        {
+            if(topo == -1)
             {
                 printf("incorrect\n");
-                i = tamanho;
+                return;
             }
-        }
-        if(entrada[i] == ')')
-        {
-            flag = 1;
-            i = tamanho;
-            printf("incorrect\n");
+            topo--;
         }
     }
-    if(flag == 0)
-    {
+    if(topo == -1)
         printf("correct\n");
-    }
+    else
+        printf("incorrect\n");
 }
