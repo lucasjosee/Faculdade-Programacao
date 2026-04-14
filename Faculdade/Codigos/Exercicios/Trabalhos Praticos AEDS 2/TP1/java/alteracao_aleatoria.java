@@ -50,14 +50,7 @@ public class alteracao_aleatoria
 
     static boolean isFIM(String e)
     {
-        if(e.charAt(0) == 'F' && e.charAt(1) == 'I' && e.charAt(2) == 'M')
-        {
-            return true;
-        }
-        else
-        {
-            return false;
-        }
+        return (e != null && e.length() == 3 && e.charAt(0) == 'F' && e.charAt(1) == 'I' && e.charAt(2) == 'M');
     }
 
 }

@@ -11,13 +11,24 @@ public class somaDigitosRec
     {
         Scanner sc = new Scanner(System.in);
 
-        String linha = sc.nextLine();
-
-        while(!isFIM(linha))
+        // O laço só executa se houver algo para ler
+        while(sc.hasNextLine()) 
         {
-            System.out.println(somarRec(linha));
+            String linha = sc.nextLine();
 
-            linha = sc.nextLine();
+            // Substituição direta do isEmpty()
+            if(linha.length() == 0) 
+            {
+                continue;
+            }
+
+            // Condição de parada rigorosa
+            if(isFIM(linha)) 
+            {
+                break;
+            }
+
+            System.out.println(somarRec(linha));
         }
         sc.close();
     }
@@ -39,10 +50,6 @@ public class somaDigitosRec
 
     static boolean isFIM(String e)
     {
-        if(e.charAt(0) == 'F' && e.charAt(1) == 'I' && e.charAt(2) == 'M')
-        {
-            return true;
-        }
-        return false;
+        return (e != null && e.length() == 3 && e.charAt(0) == 'F' && e.charAt(1) == 'I' && e.charAt(2) == 'M');
     }
 }
