@@ -16,3 +16,22 @@
 # Arquivos do Sistema Operacional
 .DS_Store
 Thumbs.db
+
+# Compilados C
+*.exe
+*.o
+*.out
+a.out
+
+# Compilados Java
+*.class
+
+# Arquivos temporários de editores
+*.swp
+*.swo
+*~
+
+# Arquivos de build
+build/
+bin/
+target/
