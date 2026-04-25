@@ -24,17 +24,17 @@ public class insertionSort
     public static void sort(int[] array)
     {
        int tam = array.length;
-       for(int i = 1; i < tam; i++)
+       for(int i = 1; i < tam; i++) //Considera que o primeiro ja está no lugar
        {
             int j = i;
             int menor = array[j];
-            while(j != 0 && menor < array[j - 1])
+            while(j != 0 && menor < array[j - 1]) //Enquanto o elemento da variavel menor for menor que o elemento anterior
             {
-                array[j] = array[j - 1];
+                array[j] = array[j - 1]; //vai puxando o elementos para a direita
                 j--;
             }
 
-            array[j] = menor;
+            array[j] = menor; //insere o menor na posição correta
        }
     }
 }

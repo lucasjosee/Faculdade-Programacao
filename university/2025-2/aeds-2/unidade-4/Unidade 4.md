@@ -1,2 +1,4 @@
-[[Estruturas de Dados Básicas Lineares]]
-
+- [[Estruturas de Dados Básicas Lineares]]
+- [[Lista Flexível]]
+- [[Matriz Flexível]]
+- [[AEDS2 - Unidade 04 Exercícios]]
