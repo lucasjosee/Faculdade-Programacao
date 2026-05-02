@@ -1,0 +1,22 @@
+{
+  "name": "testando-docker",
+  "version": "1.0.0",
+  "description": "Testando o docker e outras coisinhas",
+  "keywords": [
+    "Lucas",
+    "lindo",
+    "lucas",
+    "maravilhos"
+  ],
+  "license": "ISC",
+  "author": "Lucas",
+  "type": "commonjs",
+  "main": "app.js",
+  "scripts": {
+    "test": "testar"
+  },
+  "dependencies": {
+    "express": "^5.2.1",
+    "pg": "^8.20.0"
+  }
+}
