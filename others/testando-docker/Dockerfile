@@ -1,11 +1,12 @@
 FROM node:19-alpine
 
-COPY package.json /app/
-COPY app.js /app/
-
 WORKDIR /app
 
+COPY package.json . 
+
 RUN npm install
+
+COPY app.js .
 
 CMD ["node", "app.js"]
 
