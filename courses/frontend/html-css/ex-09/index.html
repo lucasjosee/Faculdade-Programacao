@@ -3,9 +3,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>Formulario</title>
 </head>
 <body>
-    
+    <header>
+        <h1>Testando diferentes tipos de formulario</h1>
+    </header>
+
+    <main>
+
+        <form>
+            <label for="campo_nome">Nome:</label>
+            <input id="campo_nome" type="text" placeholder="Digite seu nome aqui" required>
+
+            <br><br>
+
+            <label for="campo_sobrenome">Sobrenome:</label>
+            <input id="campo_sobrenome" type="text" placeholder="Digite seu sobrenome aqui" required>
+
+            <br><br>
+
+            <label for="campo_email">e-mail:</label>
+            <input id="campo_email" type="email" placeholder="Digite seu e-mail aqui" required>
+
+            <br><br>
+
+            <label for="campo_senha">Senha:</label>
+            <input id="campo_senha" type="password" placeholder="Digite sua senha aqui" required>
+
+            
+            <br><br>
+
+            <h2>Animal preferido</h2>
+            <input type="radio" name="animal" id="dog" value="Cachorro">
+            <label for="dog">Cachorro</label>
+            <br>
+            <input type="radio" name="animal" id="cat" value="Gato">
+            <label for="cat">Gato</label>
+            <br>
+            <input type="radio" name="animal" id="bird" value="Passarinho">
+            <label for="bird">Passarinho</label>
+
+            <h2>Oq vc gosta de comer?</h2>
+            <input type="checkbox" id="item1" name="item1" value="Pizza">
+            <label for="item1">Pizza</label>
+            <br>
+            <input type="checkbox" id="item2" name="item2" value="Macarrão">
+            <label for="item2">Macarrão</label>
+            <br>
+            <input type="checkbox" id="item3" name="item3" value="Bosta">
+            <label for="item3">Bosta</label>
+            <br>
+            <input type="checkbox" id="item1" name="item4" value="Sushi">
+            <label for="item4">Sushi</label>
+
+            
+
+            <br><br>
+            <h2>Escolha uma cor:</h2>
+            <select>
+                <option value="" disabled selected>Selecione uma cor</option>
+                <option value="vermelho">Vermelho</option>
+                <option value="verde">Verde</option>
+                <option value="amarelo">Amarelo</option>
+                <option value="azul">Azul</option>
+            </select>
+
+            <br><br>
+
+            <h2>Digite algo interessante:</h2>
+            <textarea placeholder="Digite algo" rows="10" cols="40"></textarea>
+
+            <br><br>
+
+            <select name="estado">
+                <optgroup label="Sudeste">
+                    <option value="MG">Minas Gerais</option>
+                    <option value="SP">São Paulo</option>
+                </optgroup>
+                <optgroup label="Sul">
+                    <option value="RS">Rio Grande do Sul</option>
+                    <option value="SC">Santa Catarina</option>
+                    </optgroup>
+            </select>
+
+            <br><br>
+            
+            <input type="submit" value="Enviar formulario">
+        </form>
+
+    </main>
 </body>
 </html>

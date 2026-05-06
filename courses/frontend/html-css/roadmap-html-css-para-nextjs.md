@@ -138,7 +138,7 @@
 ## 4. Ordem de estudo sugerida
 
 1. [x] Estrutura HTML e tags básicas
-2. [ ] Formulários
+2. [x] Formulários
 3. [ ] Box model + display
 4. [ ] Flexbox (pratique até decorar)
 5. [ ] CSS Grid

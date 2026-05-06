@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <header>
+        <h1>Formulario de Pessoa</h1>
+    </header>
+
+    <main>
+        <form action="/cadastrar_formulario" method="POST">
+            <fieldset>
+                <legend>Dados Basicos</legend>
+
+                <label for="nome">Nome:</label>
+                <input type="text" name="nome" id="nome" placeholder="Digite aqui" required minlength="3"">
+                
+                <label for="sexo">Genero:</label>
+                <select name="sexo" id="sexo">
+                    <option value="" disabled selected>Selecione...</option>
+                    <option value="masc">Masculino</option>
+                    <option value="fem">Feminino</option>
+                </select>
+
+                <label for="nascimento">Data de Nascimento:</label>
+                <input type="date" name="data_nascimento" id="nascimento" placeholder="Digite aqui" required> 
+
+                <label for="cpf">CPF:</label>
+                <input type="text" name="cpf" id="cpf" placeholder="Digite aqui" minlength="11">
+            </fieldset>
+
+            <fieldset>
+                <legend>Informações de contato</legend>
+
+                <label for="email">e-mail:</label>
+                <input type="email" name="email" id="email" placeholder="Digite aqui" required>
+                
+                <label for="telefone">Telefone:</label>
+                <input type="tel" name="telefone" id="telefone" placeholder="Digite aqui" required>
+                
+                <label for="endereço">Endereço:</label>
+                <input type="text" name="endereço" id="endereço" placeholder="Digite aqui" required>
+            </fieldset>
+
+            <fieldset>
+                <legend>Dados Profissionais</legend>
+
+                <label for="profissao">Profissão:</label>
+                <input type="text" name="profissao" id="profissao" placeholder="Digite aqui">
+
+                <fieldset>
+                    <legend>Experiência</legend>
+                    <input type="radio" name="experiencia" value="iniciante" id="iniciante">
+                    <label for="iniciante">Iniciante</label>
+                    <input type="radio" name="experiencia" value="intermediario" id="intermediario">
+                    <label for="iniciante">Intermediario</label>
+                    <input type="radio" name="experiencia" value="avancado" id="avancado">
+                    <label for="iniciante">Avançado</label>
+                </fieldset>
+            </fieldset>
+
+            <fieldset>
+                <legend>Linguagens:</legend>
+                <input type="checkbox" id="ingles" name="linguagens" value="ingles">
+                <label for="ingles">Ingles</label>
+                <input type="checkbox" id="espanhol" name="linguagens" value="espanhol">
+                <label for="espanhol">Espanhol</label>
+                <input type="checkbox" id="frances" name="linguagens" value="frances">
+                <label for="frances">Frances</label>
+                <input type="checkbox" id="alemao" name="linguagens" value="alemao">
+                <label for="alemao">Alemão</label>
+            </fieldset>
+
+            <label for="bio">Bio:</label>
+            <textarea name="bio" id="bio" rows="5" cols="50" placeholder="Digite aqui..."></textarea>
+
+            <label for="foto">Foto:</label>
+            <input type="file" id="foto" name="foto" accept="image/*">
+
+            <input type="checkbox" id="termos" name="aceito_termos" required>
+            <label for="termos">Aceito os <a href="/termos" target="_blank">termos</a></label>
+
+            <button type="submit">Cadastrar</button>
+            <button type="reset">Limpar formulário</button>
+        </form>
+    </main>
+</body>
+</html>
