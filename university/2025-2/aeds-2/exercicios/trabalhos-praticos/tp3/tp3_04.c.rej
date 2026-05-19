@@ -1,0 +1,20 @@
+--- tp3_04.c
++++ tp3_04.c
+@@ -81,7 +87,7 @@
+ 
+     if (esq < tam) {
+         (*comp)++;
+-        int cmp = array[esq]->capacidade - array[maior]->capacidade;
++        int cmp = comparar_datas(array[esq]->data_abertura, array[maior]->data_abertura);
+         if (cmp == 0) {
+             (*comp)++;
+             cmp = strcmp(array[esq]->nome, array[maior]->nome);
+@@ -91,7 +97,7 @@
+ 
+     if (dir < tam) {
+         (*comp)++;
+-        int cmp = array[dir]->capacidade - array[maior]->capacidade;
++        int cmp = comparar_datas(array[dir]->data_abertura, array[maior]->data_abertura);
+         if (cmp == 0) {
+             (*comp)++;
+             cmp = strcmp(array[dir]->nome, array[maior]->nome);

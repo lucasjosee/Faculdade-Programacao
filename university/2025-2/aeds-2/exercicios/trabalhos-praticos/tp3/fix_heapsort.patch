@@ -1,0 +1,42 @@
+--- tp3_04.c
++++ tp3_04.c
+@@ -64,6 +64,12 @@
+ void free_colecao(Colecao_Restaurantes* c);
+ void construir(Restaurante** array, int tam, int i, int* comp, int* mov);
+ 
++int comparar_datas(Data d1, Data d2) {
++    if (d1.ano != d2.ano) return d1.ano - d2.ano;
++    if (d1.mes != d2.mes) return d1.mes - d2.mes;
++    return d1.dia - d2.dia;
++}
++
+ int main()
+ {
+     Colecao_Restaurantes* c = ler_csv();
+@@ -75,7 +81,7 @@
+ 
+     if (esq < tam) {
+         (*comp)++;
+-        int cmp = array[esq]->capacidade - array[maior]->capacidade;
++        int cmp = comparar_datas(array[esq]->data_abertura, array[maior]->data_abertura);
+         if (cmp == 0) {
+             (*comp)++;
+             cmp = strcmp(array[esq]->nome, array[maior]->nome);
+@@ -85,7 +91,7 @@
+ 
+     if (dir < tam) {
+         (*comp)++;
+-        int cmp = array[dir]->capacidade - array[maior]->capacidade;
++        int cmp = comparar_datas(array[dir]->data_abertura, array[maior]->data_abertura);
+         if (cmp == 0) {
+             (*comp)++;
+             cmp = strcmp(array[dir]->nome, array[maior]->nome);
+@@ -121,7 +127,7 @@
+     // Para o resto, se for menor que a raiz, substitui e refaz o heap
+     for (int i = k; i < total; i++) {
+         comparacoes++;
+-        int cmp = selecionados[i]->capacidade - selecionados[0]->capacidade;
++        int cmp = comparar_datas(selecionados[i]->data_abertura, selecionados[0]->data_abertura);
+         if (cmp == 0) {
+             comparacoes++;
+             cmp = strcmp(selecionados[i]->nome, selecionados[0]->nome);
