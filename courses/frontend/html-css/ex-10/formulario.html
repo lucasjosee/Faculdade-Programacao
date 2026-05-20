@@ -4,19 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>Formulario de Pessoa</h1>
+        <h1 class="titulos">Formulario de Pessoa</h1>
     </header>
 
     <main>
         <form action="/cadastrar_formulario" method="POST">
-            <fieldset>
+            <fieldset class="campos_do_form">
                 <legend>Dados Basicos</legend>
 
                 <label for="nome">Nome:</label>
-                <input type="text" name="nome" id="nome" placeholder="Digite aqui" required minlength="3"">
+                <input type="text" name="nome" id="nome" placeholder="Digite aqui" required minlength="3">
                 
                 <label for="sexo">Genero:</label>
                 <select name="sexo" id="sexo">
@@ -32,7 +33,7 @@
                 <input type="text" name="cpf" id="cpf" placeholder="Digite aqui" minlength="11">
             </fieldset>
 
-            <fieldset>
+            <fieldset class="campos_do_form">
                 <legend>Informações de contato</legend>
 
                 <label for="email">e-mail:</label>
@@ -45,7 +46,7 @@
                 <input type="text" name="endereço" id="endereço" placeholder="Digite aqui" required>
             </fieldset>
 
-            <fieldset>
+            <fieldset class="campos_do_form">
                 <legend>Dados Profissionais</legend>
 
                 <label for="profissao">Profissão:</label>
@@ -56,13 +57,13 @@
                     <input type="radio" name="experiencia" value="iniciante" id="iniciante">
                     <label for="iniciante">Iniciante</label>
                     <input type="radio" name="experiencia" value="intermediario" id="intermediario">
-                    <label for="iniciante">Intermediario</label>
+                    <label for="intermediario">Intermediario</label>
                     <input type="radio" name="experiencia" value="avancado" id="avancado">
-                    <label for="iniciante">Avançado</label>
+                    <label for="avancado">Avançado</label>
                 </fieldset>
             </fieldset>
 
-            <fieldset>
+            <fieldset class="campos_do_form">
                 <legend>Linguagens:</legend>
                 <input type="checkbox" id="ingles" name="linguagens" value="ingles">
                 <label for="ingles">Ingles</label>
