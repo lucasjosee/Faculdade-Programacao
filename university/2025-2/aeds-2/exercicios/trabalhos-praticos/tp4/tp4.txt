@@ -1,0 +1,114 @@
+Pontifı́cia Universidade Católica de Minas Gerais
+Instituto de Ciências Exatas e Informática
+Algoritmos e Estruturas de Dados II
+
+Trabalho Prático IV
+
+Regras Básicas
+1. extends Trabalho Prático 03
+2. Neste trabalho, você deverá utilizar o Dataset fornecido no Trabalho Prático 02 como base para
+os exercı́cios.
+Para os exercı́cios que envolvem pesquisa, seu programa deve criar um arquivo de log na pasta
+corrente com o nome matrı́cula <algoritmo>.txt com uma única linha contendo sua matrı́cula, o
+número de comparações de todas as pesquisas e o tempo de execução total das pesquisas. Todas as
+informações do arquivo de log devem ser separadas por uma tabulação ’\t’.
+
+Árvores Balanceadas
+1.
+
+Árvore AVL em Java: Refaça a questão “Árvore Binária em Java” do TP03 com Árvore
+AVL. Nome do arquivo de log: matrı́cula arvore avl.txt.
+
+2.
+
+Árvore Bicolor em C: Refaça a questão “Árvore Binária em C” do TP03 com Árvore
+Bicolor. Nome do arquivo de log: matrı́cula arvore bicolor.txt.
+
+Tabelas Hash
+3.
+
+Tabela Hash Direta com Reserva em C: Refaça a questão “Árvore Binária em Java” do
+TP03 com Tabela Hash Direta com Reserva. A função de transformação será (ASCII nome)
+mod tamTab, onde (ASCII nome) é a soma dos códigos ASCII do atributo nome e tamTab
+é o tamanho da tabela. Considere que a tabela tenha tamanho 31 e a área de reserva tamanho
+19. Durante a inserção, caso a inserção do restaurante não possa ser realizada por causa de
+
+colisão e falta de espaço na área de reserva, imprima o nome do restaurante. A saı́da padrão
+será a posição de cada elemento procurado na tabela (na hash ou na área de reserva, isto é, de 0
+a 49), seguido do restaurante formatado. Se o elemento procurado não estiver na tabela, escreva
+-1. Nome do arquivo de log: matrı́cula hash reserva.txt.
+4.
+
+Tabela Hash Direta com Rehash em Java: Refaça a questão “Tabela Hash Direta
+com Reserva em C” com Tabela Hash Direta com Rehash. A primeira função de transformação
+será (ASCII nome) mod tamTab, onde tamTab (tamanho da tabela) é 83. A segunda
+função de transformação será (ASCII nome + 1) mod tamTab. Nome do arquivo de log:
+matrı́cula hash rehash.txt.
+
+5.
+
+Tabela Hash Indireta com Lista Simples em C:Refaça a questão “Tabela Hash Direta
+com Reserva em C” com Tabela Hash Indireta com Lista Simples. A função de transformação
+será (ASCII nome) mod tamTab, onde tamTab (tamanho da tabela) é 31. Nome do arquivo
+de log: matrı́cula hash indireta.txt.
+
+Estruturas Hı́bridas
+6.
+
+Árvore Binária de Árvore Binária em Java: Criar uma estrutura árvore de árvores
+para armzenar e pesquisar Restaurantes. A árvore do primeiro nı́vel é uma Árvore Binária de
+Pesquisa com chave do tipo inteiro, obtida pela operação capacidade mod 15, sendo utilizado
+o atributo capacidade do restaurante que está sendo inserido. A árvore do segundo nı́vel é uma
+AVL cuja chave é o atributo nome do restaurante. A figura a seguir mostra um exemplo da
+estrutura.
+
+A entrada padrão segue o mesmo formato da questão “Árvore Binária em Java” do TP03. Na
+primeira parte da entrada, você deve inserir os restaurantes na estrutura de dados. Na segunda
+parte da entrada, você deve efetuar pesquisas a partir de nomes de restaurantes.
+A saı́da padrão é composta por várias linhas, uma para cada pesquisa. Cada linha é composta
+pelo caminho de ponteiros utilizados na pesquisa e, no final, pelas palavras SIM ou NAO, indicando o resultado da pesquisa. Caso o restaurante seja encontrado, imprima, após a palavra
+SIM, o restaurante formatado. O caminho de ponteiros é: (RAIZ, ESQ ou DIR) para a árvore
+do primeiro nı́vel e (raiz, esq ou dir) para a árvore do segundo nı́vel. Na pesquisa, tão logo
+chegue a um nó da árvore do primeiro nı́vel, pesquise na árvore correspondente do segundo nı́vel.
+Nome do arquivo de log: matrı́cula hibrida arvore arvore.txt.
+7.
+
+Árvore Binária de Lista em C Criar uma estrutura árvore de listas para armzenar e
+pesquisar Restaurantes, no estilo de uma Agenda. A árvore (primeiro nı́vel) é uma Árvore Binária
+de Pesquisa com chave do char, que armazena o primeiro caractere do nome do restaurante que
+está sendo inserido. A lista do segundo nı́vel é uma lista simplesmente encadeada que armezena
+o ponteiro para o restaurante. A lista armanzena os restautantes ordenados pelo nome. A figura
+a seguir mostra um exemplo da estrutura, onde Item representa um Restaurante.
+
+A entrada padrão segue o mesmo formato da questão “Árvore Binária em Java” do TP03. Na
+primeira parte da entrada, você deve inserir os restaurantes na estrutura de dados. Na segunda
+parte da entrada, você deve efetuar pesquisas a partir de nomes de restaurantes.
+A saı́da padrão é composta por várias linhas, uma para cada pesquisa. Cada linha é composta
+pelo caminho de ponteiros utilizados na pesquisa e, no final, pelas palavras SIM ou NAO, indicando o resultado da pesquisa. Caso o restaurante seja encontrado, imprima, após a palavra
+SIM, o restaurante formatado. O caminho de ponteiros é RAIZ, ESQ ou DIR para a árvore. Na
+pesquisa ao longo da lista, imprima o nome dos restaurantes percorridos.
+
+Nome do arquivo de log: matrı́cula hibrida arvore lista.txt.
+
+Árvores Trie
+8.
+
+Árvore Trie com Hash em Java Refaça a questão “Árvore Binária em Java” do
+TP03 com Árvore Trie usando Hash. No arquivo de saı́da, para cada pesquisa, antes de apresentrar o resultado, imprima o caractere do nó visitado da Trie. Nome do arquivo de log:
+matrı́cula arvore trie hash.txt.
+
+9.
+
+Árvore Trie com Lista Flexı́vel em C Refaça a questão “Árvore Binária em Java” do
+TP03 com Árvore Trie usando Lista Flexı́vel. No arquivo de saı́da, para cada pesquisa, antes de
+apresentrar o resultado, imprima o caractere do nó visitado da Trie. Nome do arquivo de log:
+matrı́cula arvore trie lista.txt.
+
+10.
+
+Árvore Trie com Árvore Binária em Java Refaça a questão “Árvore Binária em Java”
+do TP03 com Árvore Trie usando Árvore Binária. No arquivo de saı́da, para cada pesquisa,
+antes de apresentrar o resultado, imprima o caractere do nó visitado da Trie. Nome do arquivo
+de log: matrı́cula arvore trie arvore.txt.
+
+

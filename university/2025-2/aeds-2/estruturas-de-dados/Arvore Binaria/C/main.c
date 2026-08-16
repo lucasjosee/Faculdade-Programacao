@@ -18,6 +18,10 @@ Arvore* newArvore();
 void inserir(Arvore* a, int n);
 No* inserirRec(No* root, int n);
 void caminhamento(No* root);
+void remover(Arvore* a, int n);
+No* removerRec(No* root, int n);
+No* menorDir(No* i, No* j);
+
 
 int main()
 {
@@ -33,6 +37,12 @@ int main()
     inserir(a, 2);
 
     caminhamento(a->root);
+    printf("\n");
+
+    remover(a, 4);
+
+    caminhamento(a->root);
+    printf("\n");
 }
 
 No* newNo(int n)
@@ -70,11 +80,60 @@ No* inserirRec(No* root, int n)
     return root;
 }
 
+void remover(Arvore* a, int n)
+{
+    a->root = removerRec(a->root, n);
+}
+
+No* removerRec(No* root, int n)
+{
+    if(root == NULL)
+        return NULL;
+    
+    if(n < root->elemento)
+        root->esq = removerRec(root->esq, n);
+    else if(n > root->elemento)
+        root->dir = removerRec(root->dir, n);
+    
+    else if(root->dir == NULL)
+    {   
+        No* del = root;
+        root = root->esq;
+        free(del);
+    }
+    else if(root->esq == NULL)
+    {   
+        No* del = root;
+        root = root->dir;
+        free(del);
+    }
+    else
+        root->dir = menorDir(root, root->dir);
+      
+    return root;
+}
+
+No* menorDir(No* i, No* j)
+{
+    if(j->esq != NULL)
+    {
+        j->esq = menorDir(i, j->esq);
+    }
+    else
+    {
+        i->elemento = j->elemento;
+        No* temp = j->dir;
+        free(j);
+        j = temp;
+    }
+    return j;
+}
+
 void caminhamento(No* root)
 {
     if(root != NULL)
     {
-        printf("%d\n", root->elemento);
+        printf("%d ", root->elemento);
         caminhamento(root->esq);
         caminhamento(root->dir);
     }
